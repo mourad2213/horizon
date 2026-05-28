@@ -1,6 +1,5 @@
 import { Component } from '@theme/component';
 import { debounce, requestIdleCallback } from '@theme/utilities';
-bbb
 /**
  * A custom element that manages the popover + popover trigger relationship for anchoring.
  * Calculates the trigger position and inlines custom properties on the popover element
