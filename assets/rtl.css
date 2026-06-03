@@ -1,0 +1,236 @@
+/* RTL (Right-to-Left) layout support
+   Activated when dir="rtl" is set on the <html> element, which happens
+   automatically for Arabic (ar), Hebrew (he), Persian (fa), Urdu (ur),
+   and Sorani Kurdish (ckb) locales via theme.liquid.
+
+   The browser's built-in dir="rtl" handling already covers:
+   - Default text alignment (flows right to left)
+   - Flex/grid logical start/end directions
+   - Input cursor and text caret placement
+   - Unicode bidi algorithm for mixed-script content
+
+   This file handles physical CSS properties (left/right, border-left/right,
+   negative translateX, etc.) that don't flip automatically.
+*/
+
+/* =========================================================
+   DRAWERS
+   ========================================================= */
+
+/* Sidebar drawer (facets, etc.) — slides in from left in LTR, right in RTL */
+[dir='rtl'] .drawer {
+  left: unset;
+  right: 0;
+  transform: translateX(120%);
+}
+
+[dir='rtl'] .drawer[data-open='true'] {
+  transform: translateX(0);
+}
+
+/* Menu / navigation drawer */
+[dir='rtl'] .menu-drawer {
+  left: unset;
+  right: 0;
+  transform: translateX(100%);
+  border-right: none;
+  border-left: var(--style-border-drawer);
+}
+
+/* Cart drawer — uses margin: 0 0 0 auto to dock to the right in LTR;
+   in RTL it docks to the left (start side) */
+[dir='rtl'] .cart-drawer__dialog {
+  margin: 0 auto 0 0;
+  border-left: none;
+  border-right: var(--style-border-drawer);
+}
+
+/* Opening: slides in from left (-100%) instead of right (100%) */
+[dir='rtl'] .cart-drawer__dialog[open] {
+  --start-x: -100%;
+}
+
+/* Closing: slides out to left (-100%) instead of right (100%) */
+[dir='rtl'] .cart-drawer__dialog[open].dialog-closing {
+  --start-x: 0px;
+  --end-x: -100%;
+}
+
+[dir='rtl'] .cart-drawer__close-button {
+  margin-right: 0;
+  margin-left: calc(var(--padding-sm) * -1);
+}
+
+/* =========================================================
+   CLOSE BUTTON (fixed overlay close — top right in LTR)
+   ========================================================= */
+
+[dir='rtl'] .close-button {
+  right: unset;
+  left: var(--margin-lg);
+}
+
+/* =========================================================
+   FORM FIELDS — floating label
+   ========================================================= */
+
+[dir='rtl'] .field__label {
+  left: unset;
+  right: var(--input-padding-x);
+}
+
+/* =========================================================
+   COLLECTION GRID — title margin for full-width layout
+   ========================================================= */
+
+[dir='rtl'] .collection-wrapper--full-width .main-collection-grid__title {
+  margin-left: 0;
+  margin-right: var(--page-margin);
+}
+
+[dir='rtl'] .collection-wrapper--full-width-on-mobile .main-collection-grid__title {
+  @media screen and (max-width: 749px) {
+    margin-left: 0;
+    margin-right: var(--page-margin);
+  }
+}
+
+/* =========================================================
+   PILLS — swatch negative overlap margin
+   ========================================================= */
+
+[dir='rtl'] .pills__pill--swatch .swatch {
+  margin-right: 0;
+  margin-left: -4px;
+}
+
+/* =========================================================
+   VARIANT OPTION BUTTONS — animated pill selection indicator
+   ========================================================= */
+
+[dir='rtl']
+  .variant-option__button-label:not(:has(:checked)):has(~ label > :checked)
+  .variant-option__button-label__pill,
+[dir='rtl']
+  .variant-option__button-label:has(:checked):has(~ label > [data-previous-checked='true'])
+  .variant-option__button-label__pill {
+  right: unset;
+  left: 0;
+}
+
+[dir='rtl']
+  .variant-option__button-label:has([data-previous-checked='true'])
+  ~ label:has([data-current-checked='true'])
+  .variant-option__button-label__pill,
+[dir='rtl']
+  .variant-option__button-label:has(:checked)
+  ~ label
+  .variant-option__button-label__pill {
+  left: unset;
+  right: 0;
+}
+
+/* clip-path inset values are (top right bottom left); swap left/right clip offsets */
+[dir='rtl']
+  .variant-option__button-label:has([data-current-checked='true']):first-of-type
+  ~ label:last-of-type:not(.variant-option__button-label--has-swatch),
+[dir='rtl']
+  .variant-option__button-label:not(:has(:checked)):has(~ label > :checked):not(
+    .variant-option__button-label--has-swatch
+  ) {
+  --clip: 0 100% 0 0;
+}
+
+[dir='rtl']
+  .variant-option__button-label:not(:has([data-current-checked='true'])):first-of-type:has(
+    ~ label:last-of-type > :checked
+  ):not(.variant-option__button-label--has-swatch),
+[dir='rtl'] .variant-option__button-label:has(:checked) ~ label:not(.variant-option__button-label--has-swatch) {
+  --clip: 0 0 0 100%;
+}
+
+/* Swatch cross-out overlay svg */
+[dir='rtl'] .variant-option__button-label svg {
+  left: unset;
+  right: var(--options-border-width);
+}
+
+/* =========================================================
+   QUANTITY RULES — separator bullet padding
+   ========================================================= */
+
+[dir='rtl'] .quantity-rules__item:not(:last-child) {
+  padding-right: 0;
+  margin-right: 0;
+  padding-left: var(--padding-xl);
+  margin-left: var(--margin-2xs);
+}
+
+/* =========================================================
+   SLIDESHOW ARROWS
+   In LTR the "previous" button has .flip-x (mirrors the arrow to point left).
+   In RTL we invert: next should point left, previous should point right.
+   ========================================================= */
+
+[dir='rtl'] .slideshow-control--previous.flip-x {
+  scale: 1 1;
+}
+
+[dir='rtl'] .slideshow-control--next {
+  scale: -1 1;
+}
+
+/* =========================================================
+   PAGINATION ARROWS — mirror chevron icons
+   ========================================================= */
+
+[dir='rtl'] .pagination__link--arrow svg {
+  scale: -1 1;
+}
+
+/* =========================================================
+   NAVIGATION DRAWER CARETS — forward/backward navigation arrows
+   ========================================================= */
+
+[dir='rtl'] .icon-caret--forward svg,
+[dir='rtl'] .icon-caret--backward svg {
+  scale: -1 1;
+}
+
+/* =========================================================
+   GRID DENSITY CONTROLS — icon offset margin
+   ========================================================= */
+
+[dir='rtl'] .grid-density-icon {
+  margin-right: 0;
+  margin-left: var(--icon-offset);
+}
+
+/* =========================================================
+   HEADER ACTIONS — cart icon panel border side
+   ========================================================= */
+
+[dir='rtl'] .header-cart-drawer {
+  border-left: none;
+  border-right: var(--style-border-drawer);
+}
+
+/* =========================================================
+   PREDICTIVE SEARCH — spinner border transparent sides
+   The search loading spinner uses transparent left/right borders to
+   create the rotating arc; swap them so the arc opens on the correct side.
+   ========================================================= */
+
+[dir='rtl'] .predictive-search-loading-bar {
+  border-right-color: transparent;
+  border-left-color: var(--color-foreground);
+}
+
+/* =========================================================
+   DIVIDER — vertical divider border side
+   ========================================================= */
+
+[dir='rtl'] .divider--vertical {
+  border-right: var(--divider-border-thickness) solid var(--color-border);
+  border-left: none;
+}

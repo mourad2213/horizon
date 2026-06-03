@@ -1,8 +1,17 @@
 <!doctype html>
+{%- liquid
+  assign rtl_langs = 'ar,he,fa,ur,ckb' | split: ','
+  assign locale_lang = request.locale.iso_code | split: '-' | first
+  assign text_direction = 'ltr'
+  if rtl_langs contains locale_lang
+    assign text_direction = 'rtl'
+  endif
+-%}
 <html
   {% if request.design_mode %}
     class="shopify-design-mode"
   {% endif %}
+  dir="{{ text_direction }}"
   lang="{{ request.locale.iso_code }}"
 >
   <head>
