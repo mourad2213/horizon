@@ -87,7 +87,6 @@
         return;
       }
       if (Date.now() - pageReadyAt < DELAY_MS) return;
-      // Push the guard state back so the user stays on the page
       history.pushState({ eipGuard: true }, '');
       openPopup();
     });
