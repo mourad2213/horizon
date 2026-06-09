@@ -1,0 +1,512 @@
+{% comment %}
+  Exit Intent Popup — sections/exit-intent-popup.liquid
+  Shows a discount popup when the user moves their mouse toward the browser bar (desktop)
+  or taps the back gesture area (mobile). Redirects to /checkout on CTA click.
+{% endcomment %}
+
+{%- assign popup_enabled = section.settings.enabled -%}
+{%- assign discount_code = section.settings.discount_code -%}
+{%- assign discount_label = section.settings.discount_label | default: '5%' -%}
+{%- assign heading = section.settings.heading | default: 'Wait — dont leave yet' -%}
+{%- assign subtext = section.settings.subtext | default: 'Complete your order now and get an exclusive discount on everything in your cart.' -%}
+{%- assign cta_text = section.settings.cta_text | default: 'Complete My Purchase' -%}
+{%- assign dismiss_text = section.settings.dismiss_text | default: 'No thanks, Ill pass' -%}
+{%- assign show_once = section.settings.show_once -%}
+{%- assign delay_seconds = section.settings.delay_seconds | default: 3 -%}
+{%- assign bg_color = section.settings.bg_color -%}
+{%- assign accent_color = section.settings.accent_color -%}
+{%- assign text_color = section.settings.text_color -%}
+{%- assign btn_bg = section.settings.btn_bg -%}
+{%- assign btn_text_color = section.settings.btn_text_color -%}
+{%- assign badge_image = section.settings.badge_image -%}
+
+{%- if popup_enabled -%}
+<div
+  id="exit-intent-overlay"
+  class="eip-overlay"
+  aria-modal="true"
+  role="dialog"
+  aria-labelledby="eip-heading"
+  aria-hidden="true"
+  style="
+    --eip-bg: {{ bg_color }};
+    --eip-accent: {{ accent_color }};
+    --eip-text: {{ text_color }};
+    --eip-btn-bg: {{ btn_bg }};
+    --eip-btn-text: {{ btn_text_color }};
+  "
+>
+  <div class="eip-backdrop" id="eip-backdrop"></div>
+
+  <div class="eip-modal">
+    <button class="eip-close" id="eip-close" aria-label="Close popup">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <div class="eip-inner">
+      {%- if badge_image != blank -%}
+        <div class="eip-badge-image">
+          {{ badge_image | image_url: width: 120 | image_tag: loading: 'lazy', alt: '' }}
+        </div>
+      {%- else -%}
+        <div class="eip-badge-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="var(--eip-accent)" stroke-width="2"/>
+            <path d="M10 18C10 18 12 12 18 12C24 12 26 18 26 18C26 18 24 24 18 24C12 24 10 18 10 18Z" stroke="var(--eip-accent)" stroke-width="1.5"/>
+            <circle cx="18" cy="18" r="3" fill="var(--eip-accent)"/>
+          </svg>
+        </div>
+      {%- endif -%}
+
+      <div class="eip-discount-badge">
+        <span class="eip-discount-label">{{ discount_label }} OFF</span>
+      </div>
+
+      <h2 class="eip-heading" id="eip-heading">{{ heading }}</h2>
+      <p class="eip-subtext">{{ subtext }}</p>
+
+      {%- if discount_code != blank -%}
+        <div class="eip-code-block">
+          <span class="eip-code-label">Your code:</span>
+          <button class="eip-code" id="eip-copy-btn" aria-label="Copy discount code {{ discount_code }}">
+            <span id="eip-code-text">{{ discount_code }}</span>
+            <span class="eip-copy-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M1 10V1h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="eip-copied-label" id="eip-copied" aria-live="polite"></span>
+          </button>
+        </div>
+      {%- endif -%}
+
+      <a
+        href="/checkout"
+        class="eip-cta"
+        id="eip-cta"
+        {% if discount_code != blank %}data-discount="{{ discount_code }}"{% endif %}
+      >
+        <span>{{ cta_text }}</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <button class="eip-dismiss" id="eip-dismiss">{{ dismiss_text }}</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* ── Overlay ───────────────────────────────────────────────── */
+  .eip-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .eip-overlay.is-visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* ── Backdrop ──────────────────────────────────────────────── */
+  .eip-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+
+  /* ── Modal ─────────────────────────────────────────────────── */
+  .eip-modal {
+    position: relative;
+    z-index: 1;
+    background: var(--eip-bg, #ffffff);
+    color: var(--eip-text, #1a1a1a);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(24px) scale(0.97);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: hidden;
+  }
+
+  .eip-overlay.is-visible .eip-modal {
+    transform: translateY(0) scale(1);
+  }
+
+  /* ── Close button ──────────────────────────────────────────── */
+  .eip-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--eip-text, #1a1a1a);
+    opacity: 0.45;
+    padding: 6px;
+    border-radius: 50%;
+    line-height: 0;
+    transition: opacity 0.2s, background 0.2s;
+  }
+
+  .eip-close:hover,
+  .eip-close:focus-visible {
+    opacity: 1;
+    background: rgba(0,0,0,0.06);
+    outline: none;
+  }
+
+  /* ── Accent strip at top ───────────────────────────────────── */
+  .eip-modal::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: var(--eip-accent, #000000);
+    border-radius: 20px 20px 0 0;
+  }
+
+  /* ── Inner padding ─────────────────────────────────────────── */
+  .eip-inner {
+    padding: 28px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  /* ── Badge image / icon ────────────────────────────────────── */
+  .eip-badge-image,
+  .eip-badge-icon {
+    margin-bottom: 12px;
+  }
+
+  .eip-badge-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+
+  /* ── Discount badge pill ───────────────────────────────────── */
+  .eip-discount-badge {
+    background: var(--eip-accent, #000000);
+    color: var(--eip-btn-text, #ffffff);
+    border-radius: 100px;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+  }
+
+  .eip-discount-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* ── Heading ───────────────────────────────────────────────── */
+  .eip-heading {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 10px;
+    color: var(--eip-text, #1a1a1a);
+  }
+
+  /* ── Subtext ───────────────────────────────────────────────── */
+  .eip-subtext {
+    font-size: 14px;
+    line-height: 1.55;
+    opacity: 0.65;
+    margin: 0 0 20px;
+    max-width: 340px;
+  }
+
+  /* ── Code block ────────────────────────────────────────────── */
+  .eip-code-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .eip-code-label {
+    font-size: 12px;
+    opacity: 0.5;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .eip-code {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: none;
+    border: 1.5px dashed var(--eip-accent, #000000);
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--eip-accent, #000000);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+  }
+
+  .eip-code:hover,
+  .eip-code:focus-visible {
+    background: var(--eip-accent, #000000);
+    color: var(--eip-btn-text, #ffffff);
+    outline: none;
+  }
+
+  .eip-code:hover .eip-copy-icon,
+  .eip-code:focus-visible .eip-copy-icon {
+    color: var(--eip-btn-text, #ffffff);
+  }
+
+  .eip-copied-label {
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    right: -50px;
+    white-space: nowrap;
+    color: green;
+  }
+
+  .eip-copied-label.show {
+    opacity: 1;
+  }
+
+  /* ── CTA Button ────────────────────────────────────────────── */
+  .eip-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--eip-btn-bg, #000000);
+    color: var(--eip-btn-text, #ffffff);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    transition: opacity 0.2s, transform 0.15s;
+    margin-bottom: 12px;
+  }
+
+  .eip-cta:hover,
+  .eip-cta:focus-visible {
+    opacity: 0.88;
+    transform: translateY(-1px);
+    outline: none;
+    color: var(--eip-btn-text, #ffffff);
+  }
+
+  .eip-cta:active {
+    transform: translateY(0);
+  }
+
+  /* ── Dismiss link ──────────────────────────────────────────── */
+  .eip-dismiss {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0.4;
+    color: var(--eip-text, #1a1a1a);
+    padding: 4px;
+    transition: opacity 0.2s;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .eip-dismiss:hover,
+  .eip-dismiss:focus-visible {
+    opacity: 0.75;
+    outline: none;
+  }
+
+  /* ── Mobile bottom sheet ───────────────────────────────────── */
+  @media (max-width: 500px) {
+    .eip-overlay {
+      align-items: flex-end;
+      padding: 0;
+    }
+
+    .eip-modal {
+      max-width: 100%;
+      border-radius: 20px 20px 0 0;
+      transform: translateY(100%);
+    }
+
+    .eip-overlay.is-visible .eip-modal {
+      transform: translateY(0);
+    }
+
+    .eip-inner {
+      padding: 24px 24px 36px;
+    }
+  }
+
+  /* ── Reduced motion ────────────────────────────────────────── */
+  @media (prefers-reduced-motion: reduce) {
+    .eip-overlay,
+    .eip-modal {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  window.__EIP_CONFIG__ = {
+    showOnce: {{ show_once | json }},
+    delaySeconds: {{ delay_seconds | json }},
+    discountCode: {{ discount_code | json }},
+    storageKey: 'eip_dismissed_{{ section.id }}'
+  };
+</script>
+{{ 'exit-intent-popup.js' | asset_url | script_tag }}
+{%- endif -%}
+
+
+{% schema %}
+{
+  "name": "Exit Intent Popup",
+  
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "checkbox",
+      "id": "enabled",
+      "label": "Enable popup",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_once",
+      "label": "Show once per session",
+      "info": "If enabled, the popup will not appear again after being dismissed.",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "delay_seconds",
+      "label": "Minimum time on page (seconds)",
+      "info": "The popup will only trigger after the visitor has been on the page for this long.",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Wait — don't leave yet!"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Complete your order now and get an exclusive discount on everything in your cart."
+    },
+    {
+      "type": "text",
+      "id": "discount_label",
+      "label": "Discount label (e.g. 5%)",
+      "default": "5%"
+    },
+    {
+      "type": "text",
+      "id": "discount_code",
+      "label": "Discount code",
+      "info": "Leave blank to hide the code block.",
+      "default": "SAVE5"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA button text",
+      "default": "Complete My Purchase"
+    },
+    {
+      "type": "text",
+      "id": "dismiss_text",
+      "label": "Dismiss link text",
+      "default": "No thanks, I'll pass"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_image",
+      "label": "Badge image (optional)",
+      "info": "Small icon above the heading. Leave empty to use the default eye icon."
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Modal background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color (badge, code border)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "CTA button background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "btn_text_color",
+      "label": "CTA button text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Exit Intent Popup"
+    }
+  ]
+}
+{% endschema %}
