@@ -2435,7 +2435,145 @@
           "title": "الاشتراك",
           "description": "تابع إلى حسابك لعرض وإدارة اشتراكاتك.",
           "button_label": "إدارة اشتراكك"
+        },
+        "title": "شكراً لشرائك!",
+        "tracking_number": "رقم التتبع:",
+        "thank_you_title": "تم تأكيد طلبك",
+        "thank_you_title_payment": "تم تأكيد دفعتك",
+        "thank_you_title_review": "تم تقديم طلبك للمراجعة",
+        "thank_you_title_payments_app_pending_default": "يتم معالجة دفعتك الآن",
+        "thank_you_title_payments_app_pending_buyer_action_required": "تم استلام طلبك",
+        "thank_you_title_payments_app_failed_pending_payment": "تعذر معالجة دفعتك",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "عنصر واحد غير مؤكد",
+          "other": "بعض العناصر غير مؤكدة"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "لم يتم تحصيل أي رسوم منك مقابل هذا",
+          "other": "لم يتم تحصيل أي رسوم منك مقابل هذه العناصر"
+        },
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "اتصل بنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "اتصل بنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "اتصل بنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك قريبًا.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك قريبًا.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك قريبًا.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "سوف تتلقى رسالة تأكيد تحتوي على رقم طلبك قريبًا.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "سوف تتلقى رسالة تأكيد تحتوي على رقم طلبك قريبًا.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "سوف تتلقى رسالة تأكيد تحتوي على رقم طلبك قريبًا.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "يتم معالجة دفعتك. ستتلقى رسالة بريد إلكتروني عندما يتم تأكيد دفعتك.",
+        "track_your_order_link_text": "تتبع طلبك",
+        "updated_time": "تم التحديث منذ %{time_ago}",
+        "unfulfilled_items_title": "التحضير للشحن",
+        "unfulfilled_items_description": "نحن نقوم حالياً بتحضير هذه العناصر للشحن.",
+        "track_shipment": "تتبع الشحنة",
+        "view_business_customer_account": "عرض الحساب",
+        "thank_you_ready_for_picked_up": "تم استلام طلبك من %{address}.",
+        "vat_invoices": {
+          "title": "فواتير ضريبة القيمة المضافة"
+        },
+        "verify_shop_account_title": "تحقق من حسابك في المتجر",
+        "verify_shop_account_message": "تم حفظ معلوماتك مع Shop، تحقق من حسابك لاستخدامها تلقائيًا في ملايين المتاجر.",
+        "verify_shop_account_cta": "تحقق من حسابك",
+        "verify_shop_account_confirmation": "تم حفظ تفاصيل الدفع"
+      },
+      "throttle": {
+        "line_to_check_out": "أنت في طابور للدفع",
+        "cart_summary_heading": "عربة التسوق الخاصة بك",
+        "merchandise": {
+          "available": "متوفر",
+          "sold_out": "نفد من المخزون"
+        },
+        "inventory": {
+          "partial_inventory_banner": "جزء من سلة مشترياتك نفد من المخزون ولن يكون متاحًا للشراء عند إتمام الدفع.",
+          "sold_out": {
+            "heading": "عربة التسوق الخاصة بك نفدت الكمية",
+            "storefront_body": "ارجع إلى المتجر لمتابعة التسوق",
+            "no_storefront_body": "للأسف، العنصر الذي ترغب في شرائه لم يعد متوفرًا.",
+            "link": "العودة إلى المتجر"
+          }
+        },
+        "estimated_wait_time": {
+          "calculating": "حساب الوقت المتوقع للانتظار",
+          "less_than_one": "الوقت المتوقع للانتظار: أقل من دقيقة",
+          "one": "الوقت المتوقع للانتظار: {{count}} دقيقة",
+          "other": "الوقت المتوقع للانتظار: {{count}} دقيقة"
+        },
+        "last_checked": "(آخر فحص: {{time}})",
+        "footer": {
+          "heading": "لا تقم بتحديث هذه الصفحة، ستتحدث تلقائيًا.",
+          "body": "العناصر في سلة التسوق الخاصة بك غير محجوزة حتى تكمل عملية الدفع."
+        },
+        "too_many_attempts": {
+          "message": "عدد المحاولات كبير جدًا",
+          "description": "حاول مرة أخرى بعد بضع دقائق"
+        },
+        "title": "الطابور",
+        "time_to_checkout_title": "حان وقت الدفع - {{shopName}}"
+      },
+      "vaulted": {
+        "change_button": "تغيير"
+      },
+      "tips": {
+        "title": "أضف بقشيش",
+        "description": "أظهر دعمك للفريق في %{shop_name}",
+        "presets_description": "اختر نسبة البقشيش",
+        "custom_label": "نصيحة مخصصة",
+        "add_tip": "أضف بقشيش",
+        "update_tip": "تحديث النصيحة",
+        "message": "شكراً لك، نحن نقدر ذلك.",
+        "no_tip_label": "لا شيء",
+        "not_available_with_spi": "غير متوفر مع تقسيط Shop Pay"
+      },
+      "wallets": {
+        "connect_shipping_methods": "{{method1}} و {{method2}}",
+        "call_to_action": "ادفع باستخدام {{walletName}}",
+        "errors": {
+          "discount_code": "غير قادر على تطبيق رمز الخصم هذا. يرجى مراجعة الرمز والمحاولة مرة أخرى.",
+          "detour": {
+            "stock_problems": "بعض العناصر لم تعد متوفرة. أغلق {{walletName}} وحاول مرة أخرى.",
+            "price_change": "تم تغيير أسعار بعض العناصر. أغلق {{walletName}} لمراجعة طلبك وحاول مرة أخرى.",
+            "queue": "تم وضعك في قائمة انتظار لإتمام عملية الدفع. أغلق {{walletName}} للمتابعة.",
+            "currency_change": "لا يمكنك استخدام عنوان مختلف مع {{walletName}}. استخدم العنوان الأصلي، أو جرب طريقة دفع مختلفة."
+          },
+          "formatting": {
+            "first_name_too_long": "الاسم الأول يحتوي على عدد كبير جدًا من الحروف",
+            "last_name_too_long": "اسم العائلة يحتوي على عدد كبير جدًا من الحروف",
+            "address_too_long": "سطر العنوان طويل جدًا"
+          }
         }
+      },
+      "units": {
+        "milligram": "مجم",
+        "kilogram": "كجم",
+        "milliliter": "مل",
+        "centiliter": "cl",
+        "liter": "L",
+        "cubic_meter": "م³",
+        "millimeter": "مم",
+        "centimeter": "سم",
+        "square_meter": "م²",
+        "ounce": "أونصة",
+        "pound": "رطل",
+        "fluid_ounce": "أونصة سائلة",
+        "pint": "البرتغالية",
+        "quart": "كيو تي",
+        "gallon": "غال",
+        "inch": "في",
+        "foot": "قدم",
+        "yard": "يد",
+        "square_foot": "قدم مربع",
+        "item": "عنصر"
+      },
+      "tooltip": {
+        "accessibility_label_context": "مزيد من المعلومات حول %{context}",
+        "additional_payment_methods": "طرق دفع إضافية"
+      },
+      "too_many_requests": {
+        "title": "عدد محاولات الدفع كثيرة جدًا",
+        "body": "يرجى الانتظار لبضع دقائق ثم المحاولة مرة أخرى من سلة التسوق الخاصة بك.",
+        "body_no_cart": "يرجى الانتظار لبضع دقائق ثم المحاولة مرة أخرى.",
+        "return_to_cart": "العودة إلى السلة"
       }
     },
     "attributes": {
