@@ -672,7 +672,71 @@
           "shipping_credential_br": "CPF/CNPJ",
           "shipping_credential_cn": "رقم هوية المقيم",
           "shipping_credential_cl": "روت",
-          "shipping_credential_co": "بطاقة الهوية/ضريبة القيمة المضافة"
+          "shipping_credential_co": "بطاقة الهوية/ضريبة القيمة المضافة",
+          "title": "معلومات إضافية",
+          "tax_credential_br": "CPF/CNPJ",
+          "shipping_credential_kr": "رمز الجمارك الشخصي",
+          "tax_credential_it": "الرمز الضريبي (اختياري)",
+          "tax_email_it": "PEC (اختياري)",
+          "tax_credential_cl": "روت",
+          "tax_credential_co": "بطاقة الهوية/ضريبة القيمة المضافة",
+          "tax_credential_type_co": "نوع البطاقة",
+          "shipping_credential_type_co": "نوع البطاقة",
+          "tax_credential_cr": "رقم التعريف/روت",
+          "shipping_credential_cr": "رقم التعريف/روت",
+          "tax_credential_ec": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "shipping_credential_ec": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "tax_credential_gt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "shipping_credential_gt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "tax_credential_id": "رقم التعريف الضريبي (NPWP)",
+          "shipping_credential_id": "رقم التعريف الضريبي (NPWP)",
+          "tax_credential_my": "رقم التعريف الضريبي / رقم التسجيل",
+          "shipping_credential_my": "رقم التعريف الضريبي / رقم التسجيل",
+          "shipping_credential_mx": "RFC",
+          "tax_credential_mx": "RFC",
+          "tax_credential_type_mx": "النظام الضريبي",
+          "tax_credential_use_mx": "استخدام CFDI",
+          "tax_credential_py": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "shipping_credential_py": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "tax_credential_pe": "رقم الهوية الوطنية / رقم التسجيل الضريبي / بطاقة الأجانب",
+          "shipping_credential_pe": "رقم الهوية الوطنية / رقم التسجيل الضريبي / بطاقة الأجانب",
+          "tax_credential_pt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "shipping_credential_pt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "tax_credential_es": "رقم الهوية الوطنية / رقم التعريف الضريبي",
+          "shipping_credential_es": "رقم الهوية الوطنية / رقم التعريف الضريبي",
+          "shipping_credential_tw": "رقم الهوية الوطنية / ضريبة القيمة المضافة",
+          "tax_credential_tr": "رقم الهوية لجمهورية تركيا / ضريبة القيمة المضافة",
+          "shipping_credential_tr": "رقم الهوية لجمهورية تركيا / ضريبة القيمة المضافة"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "أرسل لي بريدًا إلكترونيًا بالأخبار والعروض",
+        "post_accept_marketing_checkbox_label": "أنت مشترك لتلقي الأخبار والعروض عبر البريد الإلكتروني",
+        "pending_accept_marketing_checkbox_label": "تحقق من بريدك الإلكتروني لتأكيد اشتراكك في الأخبار والعروض",
+        "accept_sms_checkbox_label": "راسلني بالأخبار والعروض",
+        "disclaimer": {
+          "privacy_policy": "سياسة الخصوصية",
+          "terms_of_service": "شروط الخدمة"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "سياسة الخصوصية",
+            "terms_of_service": "شروط الخدمة",
+            "description_html": "بالتسجيل عبر الرسائل النصية، فإنك توافق على تلقي رسائل تسويقية آلية متكررة، بما في ذلك تذكيرات السلة، على رقم الهاتف المقدم. الموافقة ليست شرطًا للشراء. رد STOP لإلغاء الاشتراك. رد HELP للمساعدة. تختلف وتيرة الرسائل. قد تُطبق رسوم الرسائل والبيانات. اطلع على %{privacy_policy_link} و %{terms_of_service_link}.",
+            "description_transactional_html": "قد تتلقى رسائل نصية تتعلق بتأكيد الطلب وتحديثات الشحن. رد بـ STOP لإلغاء الاشتراك. رد بـ HELP للمساعدة. تختلف وتيرة الرسائل. قد تُطبق رسوم الرسائل والبيانات. اطلع على %{privacy_policy_modal_link} و %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "رقم الهاتف المحمول",
+          "get_offers_by_text": "احصل على العروض عبر الرسائل النصية"
+        },
+        "unsubscribe": {
+          "title": "لقد قمت بإلغاء الاشتراك",
+          "description": "لن تتلقى أي تذكيرات أخرى لعربة التسوق منا."
+        },
+        "accept_shop_pay_marketing_checkbox_label": "سجلني لتلقي الأخبار والعروض من هذا المتجر"
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "مراجعة"
         }
       }
     },
