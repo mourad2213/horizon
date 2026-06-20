@@ -1024,7 +1024,55 @@
         },
         "recurring_payments": "المدفوعات المتكررة",
         "recurring_total_multiple_label": "هذا الطلب يحتوي على رسوم متكررة لعدة عناصر.",
-        "pay_merchant_label": "ادفع %{merchant_name}"
+        "pay_merchant_label": "ادفع %{merchant_name}",
+        "title": "ملخص الطلب",
+        "view_all_items": {
+          "one": "عرض %{count} عنصر",
+          "other": "عرض جميع %{count} العناصر"
+        },
+        "shopping_cart_label": "عربة التسوق",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم غير متوفر لعنوان الشحن الخاص بك",
+        "subtotal_label": "المجموع الفرعي",
+        "subtotal_label_with_quantity": {
+          "one": "المجموع الفرعي · %{count} عنصر",
+          "other": "المجموع الفرعي · %{count} عناصر"
+        },
+        "shipping_label": "الشحن",
+        "tip_label": "نصيحة",
+        "unconfirmed_label": "غير مؤكد",
+        "shipping_pending_message": "غير متوفر بعد",
+        "shipping_policy_link": "تكاليف الشحن",
+        "taxes_label": "الضرائب",
+        "tax_line": {
+          "hst": "HST",
+          "gst": "ضريبة السلع والخدمات",
+          "pst": "توقيت المحيط الهادئ الصيفي",
+          "rst": "آر إس تي",
+          "qst": "كيو إس تي",
+          "vpt": "VPT"
+        },
+        "total_savings": "إجمالي التوفير",
+        "total_label": "الإجمالي",
+        "total_due_label": "المجموع المستحق",
+        "total_paid_label": "الإجمالي المدفوع",
+        "total_price_label": "السعر الإجمالي",
+        "total_outstanding_label": "المبلغ المستحق الدفع",
+        "total_due_today_label": "المبلغ الإجمالي المستحق اليوم",
+        "total_due_later_label": "الإجمالي المستحق لاحقًا",
+        "vat_label_html": "بما في ذلك %{amount} في الضرائب",
+        "total_updated_label": "السعر الإجمالي المحدث:",
+        "total_already_paid_label": "مدفوع",
+        "unit_price": {
+          "accessible_separator": "لكل",
+          "per_item": {
+            "single": "%{price} لكل واحدة",
+            "one": "%{price} لكل %{count} عنصر",
+            "other": "%{price} لكل %{count} عناصر"
+          }
+        },
+        "subscriptions": "الاشتراكات",
+        "total_updated_label_with_price": "السعر الإجمالي المحدث: %{totalPrice}",
+        "updated_shipping_method": "طريقة الشحن المحدثة: %{shipping_method}"
       },
       "notifications": {
         "title": "الإشعارات"
@@ -1078,6 +1126,22 @@
             "signature_mismatch": "عدم تطابق توقيع البضائع للسطر %{stable_id}."
           }
         }
+      },
+      "payment": {
+        "amazon_payments_abandoned_mfa_challenge": "لم يتمكن من إتمام الدفع الخاص بك. حاول طريقة دفع مختلفة أو اتصل بمصرفك أو جهة إصدار بطاقتك.",
+        "amazon_payments_could_not_enqueue_authorize": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "afterpay_label": "آفتر باي",
+        "alipay_label": "علي باي",
+        "account_connected": "تم ربط الحساب.",
+        "add_credit_card_modal": {
+          "title": "أضف بطاقة",
+          "save": "حفظ",
+          "cancel": "إلغاء"
+        },
+        "alternative_payment_currency_total_notice": "ملاحظة: سيتم تحصيل %{amount_due} منك.",
+        "alternative_payment_currency_total_manual_payment_notice": "ملاحظة: المجموع المحول هو %{amount_due}.",
+        "add_payment_method": "أضف طريقة دفع",
+        "add_new_payment_method": "أضف طريقة دفع جديدة"
       }
     },
     "attributes": {
