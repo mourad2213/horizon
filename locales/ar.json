@@ -1650,6 +1650,136 @@
             "permission_denied": "تعذر تحديد موقعك. حاول مرة أخرى."
           }
         }
+      },
+      "shipping": {
+        "add_address": "استخدم عنوانًا مختلفًا",
+        "add_delivery_instructions": "أضف تعليمات التوصيل",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "حذف العنوان",
+        "address_confirm": "هل أنت متأكد أنك تريد حذف هذا العنوان من حسابك؟",
+        "address_default": "تعيين كافتراضي",
+        "address_form": {
+          "add_address": "أضف عنوانًا",
+          "cancel": "إلغاء",
+          "edit": "تعديل العنوان",
+          "generic_error": "حدثت مشكلة أثناء حفظ عنوانك. حاول مرة أخرى.",
+          "save": "حفظ",
+          "update": "حفظ التغييرات",
+          "one_time_address_subtitle": "استخدم عنوانًا لمرة واحدة لهذا الطلب"
+        },
+        "add_shipping_address": "أضف عنوان الشحن",
+        "add_new_delivery_address": "أضف عنوان توصيل جديد",
+        "delivery_title": "التوصيل",
+        "no_rates_for_cart_or_destination_notice": "لا توجد طرق شحن متاحة لسلة التسوق أو العنوان الخاص بك",
+        "no_pickup_location_notice": "منتج واحد على الأقل من منتجاتك غير متوفر للاستلام",
+        "no_rates_for_country_notice": "لم يتم العثور على أسعار شحن لهذا العنوان.",
+        "no_rates_contact_notice": "اتصل بنا لمزيد من المعلومات",
+        "free_rate_label": "مجاني",
+        "cheapest_rate_label": "الأرخص",
+        "estimated_delivery_date": {
+          "one": "%{count} يوم عمل",
+          "other": "%{count} يوم عمل"
+        },
+        "estimated_delivery_date_range": "من %{minimum} إلى %{maximum} يوم عمل",
+        "estimated_delivery_time": "التسليم المتوقع %{time}",
+        "estimated_delivery_time_range": "التوصيل المتوقع %{min_time}–%{max_time}",
+        "delivery_today": "توصيل في نفس اليوم %{time}",
+        "delivery_tomorrow": "التوصيل في اليوم التالي %{time}",
+        "delivery": "التوصيل %{time}",
+        "delivery_to": "التوصيل إلى",
+        "arrives_time": "يصل خلال %{time}",
+        "arrives_time_range": "يصل خلال %{min_time}–%{max_time}",
+        "estimated_time": "المقدر %{time}",
+        "estimated_time_range": "المدة المقدرة %{min_time}–%{max_time}",
+        "default_description": "يشحن خلال يوم عمل واحد",
+        "optional_shipping_line_delivery_instructions_label": "تعليمات التوصيل (اختياري)",
+        "other_method": {
+          "one": "طريقة أخرى %{count} متاحة في"
+        },
+        "local_delivery": "التوصيل المحلي",
+        "one_time_purchase_shipping": "شحن لمرة واحدة",
+        "duties_and_taxes_title": "الرسوم والضرائب",
+        "loading_progressive_rates": "جارٍ البحث عن المزيد من الأسعار…",
+        "no_other_methods_available": "لا توجد طرق أخرى متاحة",
+        "duties_and_taxes_options": {
+          "ddu_title": "الدفع عند الاستلام",
+          "ddu_caption": "قد تُطبق رسوم إضافية",
+          "ddp_title": "ادفع الآن",
+          "ddp_caption": "لا توجد رسوم إضافية على التوصيل"
+        },
+        "address_update": "تحديث العنوان",
+        "edit": "تعديل",
+        "delete": "حذف",
+        "back": "عودة",
+        "address_more": "المزيد من الإجراءات لهذا العنوان",
+        "different_shipping_method_summary": "أدخل عنوان شحن مختلف لعرض طرق الشحن المتاحة",
+        "invalid_shipping_method_summary": "أدخل عنوان شحن صالح لعرض طرق الشحن المتاحة",
+        "invalid_shipping_method_summary_selected": "اختر عنوان شحن مختلف لعرض طرق الشحن المتاحة",
+        "method_summary": {
+          "incomplete_address_entered": "أدخل عنوان شحن كامل لعرض طرق الشحن المتاحة",
+          "incomplete_address_selected": "اختر عنوان شحن كامل لعرض طرق الشحن المتاحة"
+        },
+        "local_pickup": {
+          "search_address": "ابحث عن العنوان",
+          "rollup_title": "موقع الاستلام",
+          "rollup_accessibility_label": "خيارات موقع الاستلام"
+        },
+        "missing_shipping_address": "عنوان الشحن مفقود",
+        "choose_new_address": "اختر عنوانًا جديدًا"
+      },
+      "review": {
+        "title": "مراجعة",
+        "review_title": "أكمل طلبك",
+        "review_and_confirm_title": "راجع وأكد",
+        "checkout_as_guest": "الدفع كضيف",
+        "checkout_a_different_way": "اكتشف طريقة مختلفة",
+        "blocks": {
+          "contact_method_title": "اتصل بنا",
+          "shipping_address_title": "الشحن إلى",
+          "shipping_method_title": "طريقة الشحن",
+          "payment_method_title": "طريقة الدفع",
+          "change_shipping_address_link_label": "تغيير عنوان الشحن",
+          "change_shipping_method_link_label": "تغيير طريقة الشحن",
+          "change_payment_method_link_label": "تغيير طريقة الدفع",
+          "pick_up_in_store_shipping_method_html": "الاستلام من المتجر · %{location_name}",
+          "purchase_order_number_title": "رقم أمر الشراء",
+          "change_purchase_order_number_label": "تغيير رقم أمر الشراء",
+          "no_address": "(لا عنوان)",
+          "no_purchase_order_number": "(لا يوجد رقم طلب شراء)",
+          "due_after_order_reviewed_html": "يستحق الدفع بعد مراجعة الطلب",
+          "review_title_free_order": "راجع وأكمل طلبك",
+          "payment_method_saved_company_location": "احفظ البطاقة لهذا الموقع",
+          "company_location": "موقع الشركة",
+          "pickup_items_at": {
+            "one": "استلم %{count} عنصر في",
+            "other": "استلم %{count} عناصر في"
+          },
+          "ship_items_to": {
+            "one": "شحن %{count} عنصر إلى",
+            "other": "شحن %{count} عناصر إلى"
+          }
+        },
+        "item_header": {
+          "change_value": "تغيير القيمة",
+          "section": "قسم",
+          "value": "القيمة"
+        }
+      },
+      "session_errors": {
+        "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. قم بتحديث هذه الصفحة للعودة إلى المتجر.",
+        "session_already_finished": "تم تقديم هذا الطلب بالفعل. يمكنك العودة إلى المتجر لبدء طلب جديد."
+      },
+      "review_address_modal": {
+        "title": "مراجعة العنوان",
+        "subtitle": {
+          "one": "سيتم شحن هذا الطلب إلى العنوان الذي قدمه {{merchant}}.",
+          "other": "سيتم شحن هذا الطلب إلى العنوان الذي يقدمه {{merchant}}. اختر عنوان الشحن."
+        },
+        "subtitle_no_match": "هذا العنوان لا يتطابق مع أي من عناوينك المحفوظة.",
+        "subtitle_must_use": "سيتم شحن طلبك إلى هذا العنوان.",
+        "continue": "تابع باستخدام هذا العنوان",
+        "use_saved_address": "استخدم عنوانًا مختلفًا",
+        "return_to_cart": "العودة إلى السلة"
       }
     },
     "attributes": {
