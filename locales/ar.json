@@ -1694,7 +1694,9 @@
         "default_description": "يشحن خلال يوم عمل واحد",
         "optional_shipping_line_delivery_instructions_label": "تعليمات التوصيل (اختياري)",
         "other_method": {
-          "one": "طريقة أخرى %{count} متاحة في"
+          "one": "طريقة أخرى %{count} متاحة في",
+          "zero": "لا توجد طرق أخرى متاحة",
+          "other": "طرق أخرى %{count} متاحة تبدأ من"
         },
         "local_delivery": "التوصيل المحلي",
         "one_time_purchase_shipping": "شحن لمرة واحدة",
@@ -1725,7 +1727,71 @@
           "rollup_accessibility_label": "خيارات موقع الاستلام"
         },
         "missing_shipping_address": "عنوان الشحن مفقود",
-        "choose_new_address": "اختر عنوانًا جديدًا"
+        "choose_new_address": "اختر عنوانًا جديدًا",
+        "shipping_method_title": "طريقة الشحن",
+        "shipping_method_rollup_accessibility_label": "خيارات طريقة الشحن",
+        "shipping_method_one_time_purchase_group_title": "شراء لمرة واحدة",
+        "shipping_method_first_shipment_group_title": {
+          "one": "الشحنة الأولى",
+          "other": "الشحنات الأولى"
+        },
+        "shipping_method_subscription_group_title": "الاشتراك",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "شحنة متكررة",
+          "other": "الشحنات المتكررة"
+        },
+        "shipping_line_phone_label": "رقم الهاتف المحمول (مطلوب)",
+        "shipping_line_phone": "قد يستخدم المندوب هذا الرقم للتواصل معك.",
+        "shipping_line_delivery_phone_label": "رقم الهاتف المحمول",
+        "shipping_line_delivery_phone": "قد يتم الاتصال بك لتزويدك بتحديثات حول توصيل طلبك.",
+        "shipping_line_delivery_instructions": "أدخل المعلومات اللازمة مثل رموز الأبواب أو تعليمات التسليم.",
+        "shipping_rate_discounted_amount": "كان: %{original_amount}. الآن: %{amount}",
+        "prime_not_available": {
+          "default": "التوصيل السريع غير متوفر لطلبك. تم تحديث خيارات الشحن الخاصة بك."
+        },
+        "subscription_delivery_description": {
+          "first_n_order_free_with_cycle": {
+            "one": "شحن مجاني لـ %{count} توصيل إضافي، ثم %{recurring_order_shipping_price}",
+            "other": "شحن مجاني لـ %{count} توصيلات إضافية، ثم %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "شحن مجاني لتوصيل %{count}، ثم %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free": {
+            "one": "الطلب الأول مجانًا",
+            "other": "أول %{count} طلبات مجانًا"
+          }
+        },
+        "shipping_information_required_notice": "مطلوب معلومات الشحن. {{link}}.",
+        "shipping_information_redirect_link": "أدخل معلوماتك هنا",
+        "shipping_method_combinations": {
+          "combination": "%{rest} و %{current}"
+        },
+        "shipping_used_as_billing_notice": "سيتم استخدام هذا أيضًا كعنوان الفوترة الخاص بك لهذا الطلب.",
+        "shipping_address_title": "الشحن إلى",
+        "shipping_address_rollup_accessibility_label": "خيارات عنوان الشحن",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} عناصر",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} المزيد",
+        "split_shipping_merchandise_shipment_number": "شحنة %{number} من %{total}",
+        "pre_order_ships_now": "تشحن الآن",
+        "pre_order_ships_later": "سوف تُشحن لاحقًا",
+        "pre_order_ships_date": "سفن %{date}",
+        "split_shipping_shipped_by_shop": "تم الشحن بواسطة %{shop_name}",
+        "split_shipping_multiple_shipment_label": "شحنات متعددة",
+        "split_shipping_shipping_label": "طريقة",
+        "split_shipping_shipment_notice": "سيصل طلبك في %{quantity_shipments}",
+        "split_shipping_first_shipment_notice": "سيصل طلبك الأول في %{quantity_shipments}",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} شحنة",
+        "split_shipping_multiple_shipment_notice": "سيصل طلبك في عدة شحنات",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "ستصل طلبك في %{quantity} شحنة",
+        "split_shipping_more_shipping_options": "خيارات شحن أكثر",
+        "split_shipping_shipment_number": "شحنة %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "الكمية: %{quantity}",
+        "split_shipping_option_free": "الشحن مجاني",
+        "split_shipping_option_lowest_price": "أقل سعر",
+        "split_shipping_option_fastest": "الأسرع",
+        "split_shipping_option_recommended": "موصى به",
+        "split_shipping_option_custom": "مخصص"
       },
       "review": {
         "title": "مراجعة",
