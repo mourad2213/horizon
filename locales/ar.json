@@ -168,7 +168,9 @@
       "change_currency": {
         "credit_card_will_be_charged_html": "سيتم خصم %{amount} من بطاقة الائتمان الخاصة بك",
         "change_currency_link": "التغيير إلى %{currency_name}",
-        "card_provider_fx_charges_warning": "قد يفرض مزود بطاقتك رسوماً على المعاملات التي تتم بـ %{currency_code}."
+        "card_provider_fx_charges_warning": "قد يفرض مزود بطاقتك رسوماً على المعاملات التي تتم بـ %{currency_code}.",
+        "payment_total_label": "إجمالي الدفع",
+        "currency_not_supported_by_shop": "العملة التي اخترتها لم تعد متوفرة. جميع الأسعار الآن بـ %{currency_code}."
       },
       "change_country": {
         "cart_updated_based_on_country": "تم تحديث سلة التسوق الخاصة بك بناءً على بلد الشحن الخاص بك.",
@@ -198,6 +200,122 @@
       },
       "address_management": {
         "saved_with_store": "تم الحفظ مع هذا المتجر"
+      },
+      "contact": {
+        "address_title": "العنوان",
+        "delivery_option_title": "طريقة التوصيل",
+        "contact_method_title": "اتصل بنا",
+        "email_label": "البريد الإلكتروني",
+        "email_rollup_accessibility_label": "خيارات البريد الإلكتروني",
+        "email_placeholder": "البريد الإلكتروني",
+        "email_or_phone_label": "البريد الإلكتروني أو رقم الهاتف المحمول",
+        "email_or_phone_placeholder": "البريد الإلكتروني أو رقم الهاتف المحمول",
+        "field_saved_label": "تم الحفظ",
+        "field_tooltip_helper_text": "تُستخدم لتأكيد طلبك وتذكيرات السلة الخاصة بك",
+        "field_tooltip_accessibility_label": "مزيد من المعلومات حول كيفية استخدام معلومات الاتصال الخاصة بك",
+        "available_addresses_label": "العناوين المتاحة",
+        "new_address_label": "استخدم عنوانًا جديدًا",
+        "first_name_label": "الاسم الأول",
+        "optional_first_name_label": "الاسم الأول (اختياري)",
+        "last_name_label": "اسم العائلة",
+        "company_label": "شركة",
+        "company_attention_label": "شركة/انتباه",
+        "optional_company_attention_label": "الشركة/انتباه (اختياري)",
+        "optional_company_label": "شركة (اختياري)",
+        "address1_label": "العنوان",
+        "optional_street_name_label": "الشارع (اختياري)",
+        "address2_label": "شقة، جناح، إلخ.",
+        "optional_address2_label": "شقة، جناح، إلخ. (اختياري)",
+        "optional_subdistrict_label": "المنطقة الفرعية (اختياري)",
+        "city_label": "مدينة",
+        "country_label": "البلد/المنطقة",
+        "country_code": "رمز الدولة/المنطقة",
+        "county_label": "المقاطعة",
+        "county_placeholder": "المقاطعة",
+        "governorate_label": "محافظة",
+        "governorate_placeholder": "محافظة",
+        "emirate_label": "إمارة",
+        "emirate_placeholder": "إمارة",
+        "optional_phone_label": "الهاتف (اختياري)",
+        "optional_postal_code_label": "رمز البريد (اختياري)",
+        "optional_postcode_label": "الرمز البريدي (اختياري)",
+        "optional_pincode_label": "رمز PIN (اختياري)",
+        "civic_number_warning": "أضف رقم المنزل إذا كان لديك واحدًا",
+        "optional_last_name_label": "اسم العائلة (اختياري)",
+        "different_shipping_address_label": "الشحن إلى عنوان مختلف",
+        "different_shipping_address_text": "استخدم عنوانًا لمرة واحدة لهذا الطلب",
+        "change_company_location_link_label": "تغيير موقع الشركة",
+        "change_location_link_label": "تغيير الموقع",
+        "title": "معلومات",
+        "shipping_used_as_billing_notice": "سيتم استخدام هذا أيضًا كعنوان الفوترة الخاص بك لهذا الطلب.",
+        "stored_addresses_label": "العناوين المحفوظة",
+        "storefront_link": "موقع التاجر الإلكتروني",
+        "subdistrict_label": "المنطقة الفرعية",
+        "suburb_label": "ضاحية",
+        "province_label": "المحافظة",
+        "province_placeholder": "المحافظة",
+        "state_label": "الولاية",
+        "state_placeholder": "الولاية",
+        "region_label": "المنطقة",
+        "region_placeholder": "المنطقة",
+        "region_none": "لم يتم اختيار أي شيء",
+        "prefecture_label": "محافظة",
+        "prefecture_placeholder": "محافظة",
+        "state_and_territory_label": "الولاية/الإقليم",
+        "state_and_territory_placeholder": "الولاية/الإقليم",
+        "phone_label": "هاتف",
+        "phone_rollup_accessibility_label": "خيارات الهاتف",
+        "phone_country_code_label": "رمز دولة رقم الهاتف",
+        "phone_placeholder": "هاتف",
+        "phone_tooltip": "في حال احتجنا للتواصل معك بخصوص طلبك",
+        "zip_code_label": "الرمز البريدي",
+        "optional_zip_code_label": "رمز البريد (اختياري)",
+        "zip_code_placeholder": "الرمز البريدي",
+        "postal_code_label": "الرمز البريدي",
+        "postal_code_placeholder": "الرمز البريدي",
+        "postcode_label": "الرمز البريدي",
+        "postcode_placeholder": "الرمز البريدي",
+        "pincode_label": "رمز PIN",
+        "pincode_placeholder": "رمز PIN",
+        "ship_to_company": "الشحن إلى {{companyName}}"
+      },
+      "company_location": {
+        "location_title": "موقع الشركة",
+        "location_rollup_accessibility_label": "خيارات موقع الشركة"
+      },
+      "clipboard": {
+        "copied": "تم النسخ",
+        "failed_to_copy": "فشل النسخ"
+      },
+      "customer_account": {
+        "not_user_label": "ليس %{first_name}?",
+        "have_an_account_label": "هل لديك حساب؟",
+        "save_my_information_label": "احفظ هذه المعلومات للمرة القادمة",
+        "invalid_address": "العنوان المحدد غير صالح. %{update_address_link} أو اختر عنوانًا مختلفًا.",
+        "incomplete_address": "العنوان المحدد غير مكتمل. %{update_address_link} أو اختر عنوانًا مختلفًا.",
+        "rollup_label": "الحساب",
+        "rollup_accessibility_label": "خيارات الحساب",
+        "invalid_shipping_method_summary": "اختر عنوان شحن صالحًا لعرض طرق الشحن المتاحة",
+        "saved_address_option_description": {
+          "one": "لديك {{count}} عنوان محفوظ.",
+          "other": "لديك {{count}} عناوين محفوظة."
+        },
+        "saved_address_modal_title": "استخدم عنواني المحفوظ"
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "المنتج غير متوفر",
+          "other": "منتجات غير متوفرة"
+        },
+        "products_not_available": {
+          "one": "سيتم إزالة هذا المنتج من سلة التسوق الخاصة بك لأنه غير متوفر في بلدك/منطقتك.",
+          "other": "سيتم إزالة هذه المنتجات من سلة التسوق الخاصة بك لأنها غير متوفرة في بلدك/منطقتك."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "هذا المنتج غير متوفر في بلدك/منطقتك.",
+          "other": "هذه المنتجات غير متوفرة في بلدك/منطقتك."
+        },
+        "unavailable_label": "غير متوفر"
       }
     },
     "attributes": {
