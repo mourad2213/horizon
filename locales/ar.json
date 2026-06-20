@@ -506,6 +506,174 @@
         "payment_not_processed_title": "تعذر معالجة دفعتك",
         "payment_not_processed_text": "لم يتم تحصيل أي مبلغ منك. عد إلى سلة التسوق لإكمال عملية الشراء.",
         "return_to_cart_button_label": "العودة إلى السلة"
+      },
+      "general": {
+        "page_title": "الدفع",
+        "skip_to_content": "تخطي إلى المحتوى",
+        "pay_now_button_label": "ادفع الآن",
+        "print_policies_link_label": "طباعة",
+        "tooltip_accessibility_label": "مزيد من المعلومات",
+        "qr_code": "رمز الاستجابة السريعة",
+        "title": "الدفع - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - إتمام الشراء",
+        "loading": "جارٍ التحميل…",
+        "loading_title": "الدفع - {{shopName}}",
+        "google_map_title": "خرائط جوجل",
+        "submit_order_button_label": "إرسال الطلب",
+        "submit_for_review_button_label": "أرسل للمراجعة",
+        "submit_for_review_notice_label": "لن يُطلب منك الدفع حتى يتم مراجعة طلبك",
+        "submit": "إرسال",
+        "processing": "جارٍ المعالجة…",
+        "stepper": {
+          "increase": "زيادة {{type}}",
+          "decrease": "تقليل {{type}}",
+          "minimum_reached": "تم الوصول إلى الحد الأدنى {{value}}",
+          "maximum_reached": "تم الوصول إلى الحد الأقصى {{value}}"
+        },
+        "remove_chip": "إزالة العنصر",
+        "remove_item": "إزالة %{label}",
+        "remove_tag": "إزالة الوسم",
+        "list_formatter": {
+          "and": {
+            "lastWordConnector": "{{previousWords}}, و {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} و {{secondWord}}"
+          },
+          "or": {
+            "lastWordConnector": "{{previousWords}}، أو {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} أو {{secondWord}}"
+          }
+        },
+        "map": {
+          "cluster_title": {
+            "one": "عنقود من {{number}} علامة",
+            "other": "عنقود من {{number}} علامات"
+          }
+        },
+        "sheet": {
+          "expand": "توسيع"
+        }
+      },
+      "local_pickup": {
+        "location_address_search_label": "العنوان",
+        "location_address_search_placeholder": "%{postal_code_label} أو العنوان",
+        "location_closest": "أقرب موقع يحتوي على منتجك",
+        "location_closest_one_item": "أقرب موقع يحتوي على منتجك",
+        "location_closest_other_items": "أقرب موقع يحتوي على أغراضك",
+        "location_far_away": {
+          "one": "%{count} موقع مع العنصر الخاص بك",
+          "other": "%{count} مواقع مع العنصر الخاص بك"
+        },
+        "location_far_away_one_item": {
+          "one": "%{count} موقع مع العنصر الخاص بك",
+          "other": "%{count} مواقع مع العنصر الخاص بك"
+        },
+        "location_far_away_other_items": {
+          "one": "%{count} موقع مع أغراضك",
+          "other": "%{count} مواقع تحتوي على أغراضك"
+        },
+        "cancel": "إلغاء",
+        "all_stores_far_away": {
+          "title": "أقرب المواقع تبعد أكثر من %{distance}",
+          "title_with_item": {
+            "one": "أقرب موقع يحتوي على العنصر الخاص بك يبعد أكثر من %{distance} من %{location}",
+            "other": "أقرب موقع يحتوي على أغراضك يبعد أكثر من %{distance} عن %{location}"
+          },
+          "title_with_specific_location": "أقرب موقع يحتوي على منتجك يبعد أكثر من %{distance} عن %{location}",
+          "description": "اختر موقعًا أو %{ship_to_address_link}",
+          "ship_to_address_link": "الشحن إلى العنوان",
+          "change_location_link": "غيّر موقعك"
+        },
+        "could_not_resolve_address": "لم نتمكن من تحديد موقع عنوانك. حاول مرة أخرى أو استخدم عنوانًا مختلفًا",
+        "title": "الموقع",
+        "location_information": {
+          "one": "هناك %{count} موقع به مخزون قريب منك",
+          "other": "هناك %{count} مواقع بها مخزون قريب منك"
+        },
+        "location_information_far_away": {
+          "one": "هناك %{count} موقع يحتوي على العنصر الخاص بك",
+          "other": "هناك %{count} مواقع تحتوي على العنصر الخاص بك"
+        },
+        "location_information_far_away_one_item": {
+          "one": "هناك %{count} موقع يحتوي على العنصر الخاص بك",
+          "other": "هناك %{count} مواقع تحتوي على العنصر الخاص بك"
+        },
+        "location_information_far_away_other_items": {
+          "one": "هناك %{count} موقع يحتوي على أغراضك",
+          "other": "هناك %{count} مواقع تحتوي على أغراضك"
+        },
+        "location_nearby": {
+          "one": "هناك %{count} موقعًا قريبًا يحتوي على منتجك",
+          "other": "هناك %{count} مواقع قريبة تحتوي على منتجك"
+        },
+        "location_nearby_one_item": {
+          "one": "هناك %{count} موقعًا قريبًا يحتوي على منتجك",
+          "other": "هناك %{count} مواقع قريبة تحتوي على منتجك"
+        },
+        "location_nearby_other_items": {
+          "one": "هناك %{count} موقعًا قريبًا يحتوي على أغراضك",
+          "other": "هناك %{count} مواقع قريبة تحتوي على أغراضك"
+        },
+        "location_nearby_short": {
+          "one": "%{count} موقع قريب من غرضك",
+          "other": "%{count} مواقع قريبة من منتجك"
+        },
+        "location_nearby_short_one_item": {
+          "one": "%{count} موقع قريب من غرضك",
+          "other": "%{count} مواقع قريبة من منتجك"
+        },
+        "location_nearby_short_other_items": {
+          "one": "%{count} موقع قريب مع أغراضك",
+          "other": "%{count} مواقع قريبة تحتوي على أغراضك"
+        },
+        "toggle_location": "تغيير الموقع",
+        "toggle_more_locations": {
+          "one": "%{count} موقع إضافي",
+          "other": "%{count} مواقع إضافية"
+        },
+        "toggle_multiple_locations": "%{count}+ مواقع إضافية",
+        "or": "أو",
+        "your_location": "موقعك",
+        "search_button": "ابحث عن المتاجر",
+        "no_stores_found": "لم يتم العثور على متاجر",
+        "selected_pickup_option_no_longer_available": {
+          "title": "الموقع الذي اخترته سابقًا لم يعد متاحًا",
+          "description": "لقد اخترنا أقرب موقع يتوفر فيه أغراضك في المخزون"
+        },
+        "paginator": {
+          "accessibility_label": "ترقيم الصفحات للاستلام المحلي",
+          "previous": "الصفحة السابقة",
+          "next": "الصفحة التالية",
+          "label": {
+            "one": "%{first} - %{last} من %{count} متجر",
+            "other": "%{first} - %{last} من %{count} متجرًا"
+          }
+        },
+        "reveal_more_label": {
+          "one": "عرض %{count} موقعًا إضافيًا",
+          "other": "عرض %{count} موقعًا إضافيًا"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "لا توجد مواقع تحتوي على العنصر الخاص بك",
+          "other": "لا توجد مواقع تحتوي على عناصرك"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "لا توجد مواقع في %{country} مع العنصر الخاص بك",
+          "other": "لا توجد مواقع في %{country} مع عناصرك"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "اشحن أغراضك",
+          "search_elsewhere": "ابحث في مكان آخر",
+          "search_elsewhere_standalone": "ابحث في مكان آخر",
+          "ship_items_or_search_elsewhere": "%{ship_items} أو %{search_elsewhere}"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "shipping_credential_br": "CPF/CNPJ",
+          "shipping_credential_cn": "رقم هوية المقيم",
+          "shipping_credential_cl": "روت",
+          "shipping_credential_co": "بطاقة الهوية/ضريبة القيمة المضافة"
+        }
       }
     },
     "attributes": {
