@@ -906,7 +906,125 @@
             "other": "%{count} عناصر"
           }
         },
-        "discount_applies_to_subscription_items_only": "ينطبق هذا الخصم فقط على عناصر الاشتراك"
+        "discount_applies_to_subscription_items_only": "ينطبق هذا الخصم فقط على عناصر الاشتراك",
+        "group_title_label": "جزء من \"%{group_title}\"",
+        "for_add_on": "لـ: %{group_title}",
+        "from_shop_heading": "من %{shop_name}",
+        "from_other_stores_heading": "من متاجر أخرى",
+        "from_multiple_stores_heading": "من عدة متاجر",
+        "more_items_modal": {
+          "search_item": "بحث",
+          "clear_search": "مسح البحث",
+          "empty_results": "لم يتم العثور على نتائج لـ \"%{searchText}\". تحقق من الإملاء أو استخدم كلمة أو عبارة مختلفة.",
+          "number_items_shown": "%{shownNumber} من %{totalNumber} عنصر"
+        },
+        "discount_title": "خصم",
+        "discount_title_stacking": {
+          "one": "خصم",
+          "other": "الخصومات"
+        },
+        "gift_card_applied": "تم تطبيق بطاقة الهدايا",
+        "enter_shipping_address": "أدخل عنوان الشحن",
+        "gift_card_title": "بطاقة هدية",
+        "gift_card_label": "بطاقة هدية",
+        "gift_card_placeholder": "بطاقة هدية",
+        "gift_card_and_discount_title": "رمز الخصم أو بطاقة الهدايا",
+        "gift_card_and_discount_label": "رمز الخصم أو بطاقة الهدايا",
+        "gift_card_and_discount_placeholder": "رمز الخصم أو بطاقة الهدايا",
+        "gift_cards_apply_to_local_shop": "بطاقات الهدايا تنطبق فقط على العناصر من %{shop_name}",
+        "free_shipping_discount_label": "الشحن مجاني",
+        "gift_card_has_been_applied": "تم تطبيق بطاقة الهدايا",
+        "gift_card_has_been_removed": "تمت إزالة بطاقة الهدايا",
+        "gift_card_subscriptions_notice": "بطاقات الهدايا ستُطبق فقط على دفعتك الأولى",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم يتطلب عميل مؤهل",
+        "estimated_taxes_label": "الضرائب المقدرة",
+        "estimated_taxes_label_short": "مقدّر",
+        "information_estimated_taxes_label": "الضرائب (مقدرة)",
+        "estimated_taxes_finalization_tooltip_content": "سيتم تأكيد الضريبة النهائية والإجمالي عبر البريد الإلكتروني أو الرسائل النصية بعد تقديم طلبك.",
+        "estimated_taxes_finalization_tooltip_content_short": "تم تحديد الضريبة بعد الدفع",
+        "free_total_label": "مجاني",
+        "free_shipping_total_label": "مجاني",
+        "duties_included_label": "الإجمالي يشمل الضرائب والرسوم. لا توجد رسوم إضافية على التوصيل.",
+        "discount_savings_notice": "بعد %{discount_amount} من الخصومات",
+        "gift_card_savings_notice": "بعد %{gift_card_amount} في بطاقات الهدايا",
+        "expand_order_summary_short": "عرض",
+        "gift_card_ending": "بطاقة هدية تنتهي بـ %{last_characters}",
+        "estimated_tax_label": "الضريبة المقدرة",
+        "multiple_shipping_lines_label": "إجمالي الشحن",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> لا يمكن استخدامه مع خصوماتك الحالية.",
+        "maximum_discount_code_limit_reached": "لقد وصلت إلى الحد الأقصى لعدد رموز الخصم. قم بإزالة رمز موجود لاستخدام <strong style=\"text-transform:uppercase\">%{code}</strong>.",
+        "due_on_fulfillment": "مستحق عند التنفيذ",
+        "duties_label": "الواجبات",
+        "duties_and_taxes_label": "الرسوم والضرائب",
+        "error_duties_tooltip": "يتم شحن هذا الطلب من دولة أخرى، لذلك قد يتم فرض رسوم جمركية وضرائب عند التسليم.",
+        "may_be_charged_on_delivery": "قد يتم تحصيل الرسوم عند التسليم",
+        "full_price": "السعر الكامل: %{price}",
+        "expand_component_information": {
+          "one": "عرض %{count} عنصر",
+          "other": "عرض %{count} عنصرًا"
+        },
+        "number_items": {
+          "one": "%{count} عنصر",
+          "other": "%{count} عناصر"
+        },
+        "order_name_label": "اطلب %{name}",
+        "order_discounts_apply_to_local_shop": "تُطبق خصومات الطلبات فقط على العناصر من %{shop_name}",
+        "remove_gift_card_label": "بطاقة هدية صالحة الاستخدام",
+        "remove_discount_label": "إزالة الخصم",
+        "return_restocking_fee_label": "رسوم إعادة التخزين",
+        "return_shipping_fee_label": "إرجاع الشحن",
+        "pickup_label": "الاستلام من المتجر",
+        "no_pickup_location": "لا توجد مواقع استلام متاحة.",
+        "pickup_unavailable_banner_title": {
+          "one": "لا توجد متاجر متاحة مع منتجك",
+          "other": "لا توجد متاجر متاحة تحتوي على عناصرك"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "لا توجد متاجر متاحة في %{country} مع منتجك",
+          "other": "لا توجد متاجر متاحة في %{country} مع العناصر الخاصة بك"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "الشحن إلى العنوان",
+          "ship_to_address_instead_html": "%{link} بدلاً من ذلك"
+        },
+        "shipping_default_value": "يتم الحساب في الخطوة التالية",
+        "shipping_discount_title": "خصم الشحن",
+        "order_total_label": "إجمالي الطلب",
+        "price_before_discount_aria_text": "السعر الأصلي",
+        "price_after_discount_aria_text": "سعر مخفض",
+        "partial_total_label": "الإجمالي",
+        "paid_label": "مدفوع",
+        "payment_due_label": "المبلغ المستحق الدفع",
+        "price_label": "السعر",
+        "price_per_item": {
+          "accessibility_label": "%{price} لكل قطعة",
+          "label": "%{price}/لكل قطعة"
+        },
+        "quantity_label": "الكمية",
+        "product_change_label": "تغيير",
+        "product_image_label": "صورة المنتج",
+        "product_image_quantity_label": "الكمية",
+        "scroll_order_summary": "قم بالتمرير لمزيد من العناصر",
+        "original_price": "السعر الأصلي",
+        "sale_price": "سعر البيع",
+        "order_total_updated_label": "الإجمالي المحدث",
+        "recurring_subtotal_label": "المجموع الفرعي المتكرر",
+        "recurring_total_label": "الإجمالي المتكرر",
+        "recurring_total_tooltip": "لا يشمل الشحن أو الضرائب أو الرسوم أو أي خصومات قابلة للتطبيق.",
+        "percent_off_shipping": "خصم %{percent}% على الشحن",
+        "payment_terms_totals": {
+          "due_today": "المبلغ الإجمالي المستحق اليوم",
+          "due_today_next": "مستحق اليوم",
+          "due_later": "المجموع المستحق %{due_at}",
+          "due_on_fulfillment": "المبلغ الإجمالي المستحق عند التنفيذ",
+          "due_on_fulfillment_next": "مستحق عند التنفيذ",
+          "due_on_receipt": "المبلغ الإجمالي المستحق عند الاستلام",
+          "due_later_checkout_to_draft": "الإجمالي المستحق لاحقًا",
+          "total_paid": "الإجمالي المدفوع"
+        },
+        "recurring_payments": "المدفوعات المتكررة",
+        "recurring_total_multiple_label": "هذا الطلب يحتوي على رسوم متكررة لعدة عناصر.",
+        "pay_merchant_label": "ادفع %{merchant_name}"
       },
       "notifications": {
         "title": "الإشعارات"
