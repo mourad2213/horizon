@@ -300,7 +300,10 @@
           "one": "لديك {{count}} عنوان محفوظ.",
           "other": "لديك {{count}} عناوين محفوظة."
         },
-        "saved_address_modal_title": "استخدم عنواني المحفوظ"
+        "saved_address_modal_title": "استخدم عنواني المحفوظ",
+        "sign_in_link_label": "تسجيل الدخول",
+        "sign_out_link_label": "تسجيل الخروج",
+        "saved_address_option_link": "استخدم عنوانًا محفوظًا"
       },
       "contextual_availability": {
         "title": {
@@ -316,6 +319,85 @@
           "other": "هذه المنتجات غير متوفرة في بلدك/منطقتك."
         },
         "unavailable_label": "غير متوفر"
+      },
+      "embed": {
+        "header": {
+          "review_order": "راجع طلبك"
+        },
+        "shipping": {
+          "shipping_options": "عرض جميع خيارات الشحن"
+        },
+        "payment": {
+          "payment_options": "عرض جميع خيارات الدفع"
+        }
+      },
+      "delivery_options": {
+        "free_total_label": "مجاني",
+        "ship": "اشحن",
+        "ship_to_address": "الشحن إلى العنوان",
+        "shipping_address": "عنوان الشحن",
+        "pick_up": "التقاط",
+        "pick_up_from_store": "الاستلام من المتجر",
+        "pick_up_locations": "مواقع الاستلام",
+        "pickup_point_map_title": "خريطة نقاط الاستلام",
+        "pick_up_in_one_hour": "عادةً جاهز خلال ساعة واحدة",
+        "pick_up_in_two_hours": "عادةً جاهز خلال ساعتين",
+        "pick_up_in_four_hours": "عادةً جاهز خلال 4 ساعات",
+        "pick_up_in_twenty_four_hours": "عادةً جاهز خلال 24 ساعة",
+        "pick_up_in_two_to_four_days": "عادةً جاهز خلال 2-4 أيام",
+        "pick_up_in_five_or_more_days": "عادةً جاهز خلال ٥ أيام أو أكثر",
+        "pick_up_in_zero_to_two_hours": "جاهز للاستلام خلال ساعتين",
+        "pick_up_in_two_to_four_hours": "جاهز للاستلام خلال 4 ساعات",
+        "pick_up_immediately": "جاهز للاستلام الآن",
+        "pick_up_next_day": "جاهز للاستلام في اليوم التالي",
+        "pickup_point_method_definition": "الشحن إلى نقطة الاستلام",
+        "retail_method_definition": "الشحن بالتجزئة",
+        "company_location_no_address_banner": "سيتم تقديم الطلبات التي تُشحن إلى مواقع بدون عنوان للمراجعة.",
+        "none_method_definition": "لا شحن",
+        "digital_product": "منتج رقمي",
+        "subscription_pickup_information": "سيكون هذا هو موقع الاستلام لجميع الطلبات المستقبلية لاشتراكك."
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "لا يتوفر توصيل لـ %{count} عنصر",
+            "other": "لا يتوفر توصيل لـ %{count} عناصر"
+          },
+          "message": {
+            "one": "سيتم إزالة هذا العنصر من سلة التسوق الخاصة بك لأنه لا توجد طرق توصيل متاحة لعنوانك.",
+            "other": "سيتم إزالة هذه العناصر من سلة التسوق الخاصة بك لأنه لا توجد طرق توصيل متاحة لعنوانك."
+          },
+          "label": "لا يوجد توصيل"
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "طرق الدفع",
+        "title": "طرق الدفع",
+        "update_card_button_label": "تحديث البطاقة",
+        "delete_customer_mandate": {
+          "generic_error": "حدثت مشكلة أثناء معالجة طلبك.",
+          "success_message": "تم حذف طريقة الدفع الخاصة بك بنجاح"
+        }
+      },
+      "error_page": {
+        "embed_errors": {
+          "storefront_password_required": "هذا المتجر محمي بكلمة مرور",
+          "customer_account_required": "يتطلب إكمال عملية الدفع وجود حساب عميل",
+          "cart_completed": "تم إتمام هذه العملية الشرائية بالفعل",
+          "invalid_cart": "العربة لم تعد صالحة",
+          "not_authorized": "فشل التحقق من المصادقة عند الدفع. يرجى التحقق من بيانات اعتماد التطبيق الخاصة بك",
+          "killswitch_enabled": "عملية الدفع غير متوفرة مؤقتًا",
+          "policy_violation": "غير قادر على إتمام عملية الدفع بسبب قيود تكوين السياسة",
+          "unrecoverable_failure": "غير قادر على تحميل صفحة الدفع. حاول مرة أخرى"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "لم يتمكن من معالجة طلبك لأن رمز الخصم الخاص بك لم يعد متاحًا. راجع إجمالي طلبك وحاول مرة أخرى."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "انتقل إلى المتجر الإلكتروني"
+        }
       }
     },
     "attributes": {
