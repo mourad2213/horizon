@@ -1986,9 +1986,47 @@
         "cross_border": {
           "modal": {
             "content": "يجب أن تكون مواقع الاستلام والشحن في نفس البلد. تغيير البلد سيؤدي إلى إعادة تعيين جميع العناصر إلى الشحن.",
-            "change_country": "تغيير البلد"
+            "change_country": "تغيير البلد",
+            "heading": "تغيير البلد؟",
+            "country_changed_heading": "تم تغيير البلد"
           },
           "banner": "تم تحديث طريقة التوصيل الخاصة بك"
+        },
+        "pickup_all_items": "التقط جميع العناصر",
+        "items_for_pickup": "عناصر للاستلام",
+        "items_for_shipping": "عناصر للشحن",
+        "items_moved_to_shipping_toast": "تم نقل العناصر التي لا يمكن استلامها إلى الشحن",
+        "delivery_method": "طريقة التوصيل المجزأة",
+        "delivery_method_menu": "قائمة طريقة التوصيل المقسمة",
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "لا يمكن استلام %{count} عنصر",
+              "other": "لا يمكن استلام %{count} عناصر"
+            },
+            "cannot_be_shipped": {
+              "one": "لا يمكن شحن %{count} عنصر",
+              "other": "لا يمكن شحن %{count} عناصر"
+            }
+          },
+          "remove_item": {
+            "one": "إزالة العنصر",
+            "other": "إزالة العناصر"
+          },
+          "remove_item_only": {
+            "one": "إزالة العنصر",
+            "other": "إزالة العناصر"
+          },
+          "ship_separately": {
+            "one": "اشحنه بشكل منفصل",
+            "other": "اشحنها بشكل منفصل"
+          },
+          "pick_them_up_in_store": {
+            "one": "استلمه من المتجر",
+            "other": "احصل عليها من المتجر"
+          },
+          "remove_items_or_ship": "%{ship_separately_link} أو %{remove_items_link}",
+          "remove_items_or_pickup": "%{pickup_in_store_link} أو %{remove_items_link}"
         }
       },
       "shop_pay_external": {
@@ -2000,6 +2038,46 @@
         },
         "return_to_store": "العودة إلى {{shopName}}",
         "return_to_store_simple": "العودة إلى المتجر"
+      },
+      "stock": {
+        "page_title": "مشاكل المخزون",
+        "items_unavailable_notice": "بعض العناصر لم تعد متوفرة.",
+        "product_column_header": "المنتجات",
+        "quantity_column_header": "الكمية",
+        "price_column_header": "السعر",
+        "removed_from_cart_notice": "تمت الإزالة من السلة",
+        "reduced_label": "مخفض",
+        "reduced_with_quantity_label": "تبقى فقط %{quantity_available}",
+        "remove_from_cart_button_label": "إزالة من السلة",
+        "continue_shopping_button_label": "تابع",
+        "go_back_to_cart_button_label": "العودة إلى سلتي",
+        "remove": "إزالة",
+        "return_to_store_label": "العودة إلى المتجر",
+        "continue_cta_label": "تابع إتمام الشراء",
+        "item_label": {
+          "one": "{{count}} عنصر",
+          "other": "{{count}} عناصر"
+        },
+        "empty_cart_label": "سلتك فارغة",
+        "quantity_update": {
+          "page_title": "تحديث الكمية",
+          "title": "تحديث الكمية",
+          "description": "الكميات المتاحة لهذه العناصر قد تغيرت وتم تحديثها في سلة التسوق الخاصة بك."
+        },
+        "price_update": {
+          "title": "تحديث السعر",
+          "description": "تم تغيير أسعار هذه العناصر وتم تحديثها في سلة التسوق الخاصة بك.",
+          "updated_price": "السعر المحدث"
+        },
+        "price_and_quantity_update": {
+          "title": "تحديث السعر والكمية",
+          "description": "تغيرت الأسعار والكميات المتاحة لهذه العناصر وتم تحديثها في سلة التسوق الخاصة بك."
+        },
+        "out_of_stock": {
+          "description": "هذه العناصر لم تعد متوفرة وسيتم إزالتها من سلة التسوق الخاصة بك.",
+          "items_unavailable": "بعض العناصر لم تعد متوفرة وسيتم إزالتها من سلة التسوق الخاصة بك."
+        },
+        "out_of_stock_in_context_label": "هذا المنتج غير متوفر في بلدك/منطقتك."
       }
     },
     "attributes": {
