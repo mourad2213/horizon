@@ -2738,6 +2738,144 @@
       "message": "حل الكابتشا للمتابعة",
       "error": "فشل التحقق من كابتشا",
       "submit_button_text": "إرسال"
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "خطأ في إعادة تعيين كلمة المرور",
+        "subscribe_error": "خطأ في الاشتراك",
+        "unsubscribe_error": "خطأ في إلغاء الاشتراك",
+        "no_account_found": "لم يتم العثور على حساب بهذا البريد الإلكتروني.",
+        "invalid_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+        "denylisted_reset_password": "لا يمكن الوصول إلى حسابك لأن كلمة المرور الحالية غير آمنة. ستتلقى رسالة بريد إلكتروني لتحديث كلمة المرور الخاصة بك.",
+        "signup_disabled": "تم تعطيل إنشاء حساب العميل."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "تمت الإضافة %{delta}",
+          "increment_item": "تمت الإضافة %{delta}",
+          "decrement_item": "تمت إزالة %{delta} من %{total}",
+          "decrement_fulfilled_line_item": "تم إرجاع %{delta} من %{total}",
+          "decrement_return_line_item": "تمت إزالة %{delta} من الإرجاع"
+        }
+      },
+      "order": {
+        "financial_status": {
+          "authorized": "مُخوّل",
+          "pending": "قيد الانتظار",
+          "paid": "مدفوع",
+          "unpaid": "غير مدفوع",
+          "voided": "ملغى",
+          "partially_paid": "مدفوع جزئياً",
+          "partially_refunded": "تم استرداد جزء من المبلغ",
+          "refunded": "تم استرداد المبلغ",
+          "expired": "منتهي الصلاحية"
+        },
+        "fulfillment_status": {
+          "fulfilled": "تم التنفيذ",
+          "complete": "اكتمال",
+          "partial": "جزئي",
+          "unfulfilled": "غير مُنفذ",
+          "restocked": "تم إعادة التخزين"
+        },
+        "cancel_reason": {
+          "declined": "تم رفض الدفع",
+          "inventory": "العناصر غير متوفرة",
+          "fraud": "طلب احتيالي",
+          "customer": "قام العميل بتغيير/إلغاء الطلب",
+          "staff": "خطأ من الموظف",
+          "other": "أخرى"
+        },
+        "cash_on_delivery": "الدفع عند الاستلام (COD)",
+        "not_available": "هذا الطلب غير متوفر",
+        "transaction_status": {
+          "success": "نجاح",
+          "pending": "قيد الانتظار",
+          "failure": "فشل",
+          "error": "خطأ"
+        }
+      },
+      "cart": {
+        "not_found": "العربة غير موجودة",
+        "only_n_items_available": "يمكنك إضافة %{count} فقط من %{name} إلى السلة.",
+        "too_many_items_in_cart": "لا يمكنك إضافة المزيد من %{name} إلى السلة.",
+        "only_one_added_to_cart": "تمت إضافة عنصر واحد فقط إلى سلة التسوق الخاصة بك بسبب التوفر.",
+        "only_n_added_to_cart": "تمت إضافة %{quantity} عناصر فقط إلى سلة التسوق الخاصة بك بسبب التوفر.",
+        "not_respect_step": "يمكنك إضافة هذا العنصر فقط بزيادات قدرها %{step}.",
+        "product_not_available": "المنتج غير متوفر",
+        "too_many_line_items_error": "عربة التسوق الخاصة بك لا يمكن أن تحتوي على أكثر من %{max} عناصر.",
+        "stock_problems_html": "لم يعد هناك عنصر أو أكثر متاحًا. لقد قدمنا لك <a href='%{link}'>عربة تسوق محدثة</a>.",
+        "product_sold_out": "المنتج '%{name}' قد نفد بالفعل.",
+        "variant_not_found": "لا يمكن العثور على المتغير",
+        "variant_requires_selling_plan": "يمكن شراء المتغير فقط مع خطة بيع.",
+        "selling_plan_not_available_for_company_locations": "يتوفر الشراء لمرة واحدة فقط لطلبات الشركات (B2B)",
+        "selling_plan_not_applicable": "لا يمكن تطبيق خطة البيع على المتغير",
+        "shipping_address_not_required": "هذه العربة لا تتطلب شحنًا",
+        "shipping_address_invalid": "حدثت مشكلة في حساب رسوم الشحن الخاصة بك. تابع إلى صفحة الدفع لاختيار سعر الشحن قبل إتمام طلبك.",
+        "view_lines_limit_reached": "يجب أن تكون الأسطر أقل من أو تساوي %{limit}"
+      },
+      "storefront": {
+        "invalid_password": "كلمة المرور غير صحيحة، يرجى المحاولة مرة أخرى."
+      },
+      "tags": {
+        "add_articles": "تضييق البحث ليشمل المقالات التي تحتوي أيضًا على الوسم %{tag}",
+        "add_products": "تضييق الاختيار إلى المنتجات التي تطابق الوسم %{tag}",
+        "remove_articles": "وسع البحث ليشمل المقالات التي لم يتم وسمها بـ %{tag}",
+        "remove_products": "إزالة الوسم %{tag}"
+      }
+    },
+    "sentence": {
+      "two_words_connector": "و",
+      "last_word_connector": "، و"
+    },
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "search": {
+      "error": "حدثت مشكلة أثناء تحميل نتائج البحث الخاصة بك. يرجى تحديث الصفحة أو المحاولة مرة أخرى لاحقًا.",
+      "sorting": {
+        "relevance": "الأهمية",
+        "price_ascending": "السعر من الأقل إلى الأعلى",
+        "price_descending": "السعر من الأعلى إلى الأدنى"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "خطأ - %{title}",
+      "products": "المنتجات",
+      "shopping_cart": "عربة التسوق الخاصة بك",
+      "account": "الحساب",
+      "create_account": "إنشاء حساب",
+      "reset_account": "إعادة تعيين الحساب",
+      "addresses": "العناوين",
+      "order": "اطلب %{name}",
+      "search": "بحث",
+      "search_results": {
+        "one": "بحث: تم العثور على %{count} نتيجة لـ \"%{terms}\"",
+        "other": "بحث: تم العثور على %{count} نتائج لـ \"%{terms}\""
+      },
+      "collections": "المجموعات",
+      "not_found": "٤٠٤ غير موجود",
+      "challenge": "تحدي",
+      "checkpoint": "نقطة تفتيش"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "عادةً جاهز خلال ساعة واحدة",
+        "two_hours": "عادةً جاهز خلال ساعتين",
+        "four_hours": "عادةً جاهز خلال 4 ساعات",
+        "twenty_four_hours": "عادةً جاهز خلال 24 ساعة",
+        "two_to_four_days": "عادةً جاهز خلال 2-4 أيام",
+        "five_or_more_days": "عادةً جاهز خلال ٥ أيام أو أكثر",
+        "zero_to_two_hours": "عادةً جاهز خلال ساعتين",
+        "two_to_four_hours": "عادةً جاهز خلال 4 ساعات",
+        "immediately": "جاهز للاستلام الآن",
+        "next_day": "جاهز للاستلام في اليوم التالي"
+      }
+    },
+    "subscriptions": {
+      "buyer_consent_product": "هذا العنصر هو عملية شراء متكررة أو مؤجلة. من خلال المتابعة، أوافق على %{cancellationPolicyLink} وأفوضكم بخصم مبلغ الدفع من طريقة الدفع الخاصة بي بالأسعار والتكرار والتواريخ المدرجة في هذه الصفحة حتى يتم تنفيذ طلبي أو أقوم بالإلغاء، إذا كان مسموحًا بذلك.",
+      "buyer_consent_cart": "واحد أو أكثر من العناصر في سلة التسوق الخاصة بك هو شراء متكرر أو مؤجل. من خلال المتابعة، أوافق على %{cancellationPolicyLink} وأفوضكم بخصم المبلغ من طريقة الدفع الخاصة بي بالأسعار والتكرار والتواريخ المدرجة في هذه الصفحة حتى يتم تنفيذ طلبي أو أقوم بالإلغاء، إذا كان ذلك مسموحًا.",
+      "cancellation_policy": "سياسة الإلغاء"
     }
   },
   "content": {
