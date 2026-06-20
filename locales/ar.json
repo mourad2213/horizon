@@ -1273,7 +1273,67 @@
         },
         "gift_card_checkbox_label": "تطبيق بطاقة الهدايا",
         "expired_payment_method": "طريقة الدفع المختارة منتهية الصلاحية",
-        "gift_cards_unavailable": "لم يعد بإمكان بطاقة الهدايا الخاصة بك أن تُستخدم لهذا الطلب وقد تم إزالتها"
+        "gift_cards_unavailable": "لم يعد بإمكان بطاقة الهدايا الخاصة بك أن تُستخدم لهذا الطلب وقد تم إزالتها",
+        "network_card_payment_options": "اختر شبكة بطاقة",
+        "network_card_persistence_description": "سيتم حفظ الشبكة المختارة مع طريقة الدفع الخاصة بك للمعاملات المستقبلية.",
+        "name_on_card_label": "الاسم على البطاقة",
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "order_covered_by_gift_cards_notice": {
+          "one": "طلبك مغطى بواسطة بطاقة الهدايا الخاصة بك.",
+          "other": "طلبك مغطى ببطاقات الهدايا الخاصة بك."
+        },
+        "offsite_gateway_redirect_hint": "سيتم توجيهك إلى %{gateway_label} لإكمال عملية الشراء.",
+        "offsite_gateway_review_page_redirect_hint": "بعد مراجعتك لطلبك، سيتم توجيهك إلى %{gateway_label} لإكمال عملية الشراء.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} المجموع %{total_shop_price}",
+        "offsite_gateway_redirect_hint_no_button_label": "سيتم توجيهك إلى %{gateway_label} لإكمال عملية الشراء.",
+        "no_js_credit_card_fields_redirect_hint": "سيتم توجيهك لإضافة معلومات الدفع الخاصة بك.",
+        "no_method_error": "لا يمكن لهذا المتجر قبول المدفوعات في الوقت الحالي.",
+        "not_configured_error": "لا يمكن لهذا المتجر قبول المدفوعات في الوقت الحالي.",
+        "missing_credit_card_error": "أدخل تفاصيل بطاقتك لإتمام الدفع",
+        "klarna_pay_later_label": "ادفع لاحقًا مع كلارنا",
+        "klarna_pay_now_label": "ادفع الآن مع كلارنا",
+        "multibanco_label": "مولتيبانكو",
+        "klarna_slice_it_label": "التمويل مع كلارنا",
+        "no_real_orders_dev_store": "هذا المتجر لا يمكنه قبول الطلبات الحقيقية أو المدفوعات الحقيقية.",
+        "no_taxes_banner_content": "لن يتم فرض ضرائب على هذا الطلب. بمجرد استلامك للدفع، لا يمكن إضافة الضرائب بعد ذلك.",
+        "mor_disclaimer_html": "من خلال النقر أدناه وإكمال طلبك، فإنك توافق على شراء العنصر (العناصر) الخاصة بك من Global-e كالتاجر المسجل لهذه المعاملة، وفقًا لـ <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">الشروط والأحكام</a> و<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">سياسة الخصوصية</a>. Global-e هي مزود خدمة تنفيذ دولي لـ %{shop_name}",
+        "order_covered_by_store_credit_notice": "طلبك مغطى برصيد متجرك.",
+        "order_covered_by_redeemables_notice": "طلبك مغطى.",
+        "location_billing_address_label": "عنوان الفوترة للموقع",
+        "location_shipping_address_label": "عنوان شحن الموقع",
+        "no_working_method_error": "لا يمكن لهذا المتجر قبول المدفوعات في الوقت الحالي. قم بتحديث هذه الصفحة أو عد لاحقًا.",
+        "local_payment_method_receiver_notice": "بعد تقديم طلبك، ستتلقى تفاصيل الدفع. قم بالدفع في جهاز الصراف الآلي أو عبر الإنترنت خلال {{dueDays}} يومًا.",
+        "order_edit_banner_items_added": {
+          "one": "تمت الإضافة",
+          "other": "تمت الإضافة %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "تمت الإزالة",
+          "with_quantities": "تمت إزالة {{delta}} من {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "تم الإرجاع {{quantity}}",
+          "with_quantities": "تم إرجاع {{delta}} من {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "تمت إزالته من الإرجاع",
+          "with_quantities": "تمت إزالة {{delta}} من الإرجاع"
+        },
+        "order_edit_banner_single_item_added": "تمت الإضافة",
+        "order_edit_banner_multiple_items_added": "تمت الإضافة {{amount}}",
+        "order_edit_banner_single_item_removed": "تمت الإزالة",
+        "order_edit_banner_multiple_items_removed": "تمت إزالة {{amount}}",
+        "order_edit_banner_single_item_returned": "تم الإرجاع",
+        "order_edit_banner_multiple_items_returned": "تم الإرجاع {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "تمت إزالته من الإرجاع",
+        "order_edit_banner_multiple_items_return_line_item_removed": "تمت إزالة {{amount}} من الإرجاع",
+        "markets_pro_disclaimer_label": "بإتمام طلبك، فإنك توافق على الشراء من Global-e كتاجر مسجل، وذلك وفقًا لشروط %{markets_pro_terms} و %{privacy_policy} الخاصة بـ Global-e، ومشاركة معلوماتك مع %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "الشروط والأحكام",
+        "markets_pro_disclaimer_privacy_policy": "سياسة الخصوصية",
+        "markets_pro_disclaimer_terms_and_conditions_title": "شروط وأحكام تاجر السجل",
+        "markets_pro_disclaimer_privacy_policy_title": "سياسة خصوصية تاجر السجل",
+        "new_bank_account_disclaimer": "بإكمال طلبك، فإنك تفوض %{shop_name} بخصم المبلغ من الحساب أدناه عبر ACH في الوقت والمبلغ الموضحين.",
+        "multiple_primary_payment_not_allowed": "طرق الدفع غير صالحة"
       }
     },
     "attributes": {
