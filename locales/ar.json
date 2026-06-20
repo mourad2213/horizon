@@ -1873,7 +1873,21 @@
         "third_party_address_timeout": "غير قادر على تحميل العناوين. حاول مرة أخرى أو استخدم عنوانًا مختلفًا.",
         "third_party_address_error": "حدث خطأ أثناء تحميل اختيار العنوان. الرجاء إدخال عنوانك يدويًا أدناه.",
         "third_party_payment_timeout": "غير قادر على تحميل طرق الدفع. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
-        "third_party_payment_error": "حدث خطأ أثناء تحميل اختيار الدفع. يرجى استخدام طريقة دفع مختلفة."
+        "third_party_payment_error": "حدث خطأ أثناء تحميل اختيار الدفع. يرجى استخدام طريقة دفع مختلفة.",
+        "title": "الشحن",
+        "waiting_on_rate_notice": "جاري الحصول على أسعار الشحن المتاحة…",
+        "waiting_on_pickup_location_notice": "جاري جلب مواقع الاستلام المتاحة…",
+        "two_day_delivery": "توصيل خلال يومين %{time}",
+        "unbranded_default_description": "جاهز للشحن",
+        "unbranded_description_same_day": "يشحن في نفس يوم العمل",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "يشحن في يوم العمل التالي",
+          "other": "يشحن خلال %{count} يوم عمل"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "يشحن خلال %{count} أسبوع",
+          "other": "يشحن خلال %{count} أسابيع"
+        }
       },
       "review": {
         "title": "مراجعة",
@@ -1928,6 +1942,64 @@
         "continue": "تابع باستخدام هذا العنوان",
         "use_saved_address": "استخدم عنوانًا مختلفًا",
         "return_to_cart": "العودة إلى السلة"
+      },
+      "shipping_errors": {
+        "shipping_method": "تم تغيير خيارات الشحن لطلبك. راجع اختيارك.",
+        "shipping_method_not_available": "تم تحديث سلة التسوق الخاصة بك والعناصر التي أضفتها لا يمكن شحنها إلى عنوانك. قم بإزالة العناصر لإكمال طلبك.",
+        "shipping_method_not_available_generic": {
+          "one": "لا يمكن شحن طلبك إلى العنوان المحدد. يرجى مراجعة عنوانك للتأكد من صحته والمحاولة مرة أخرى، أو اختيار عنوان مختلف.",
+          "other": "بعض العناصر في سلة التسوق الخاصة بك لا يمكن شحنها إلى العنوان الذي أدخلته. يرجى مراجعة عنوانك للتأكد من صحته والمحاولة مرة أخرى، أو اختيار عنوان مختلف."
+        },
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "العناصر في السلة لا تستوفي متطلبات السعر أو الوزن للتأهل للشحن. قم بتحديث سلتك وحاول مرة أخرى.",
+        "shipping_method_not_available_updated": {
+          "one": "العنصر الذي أضفته لا يتم شحنه إلى موقعك. قم بإزالته لإتمام عملية الشراء، أو اتصل بالمتجر.",
+          "other": "عنصر واحد أو أكثر أضفته لا يتم شحنه إلى موقعك. قم بإزالتها لإتمام عملية الشراء، أو اتصل بالمتجر."
+        },
+        "payment_method_not_supported": "لا يمكنك استخدام طريقة الدفع هذه لـ %{country}. استخدم طريقة دفع مختلفة للشحن إلى هذا البلد.",
+        "empty_state": "أدخل عنوان الشحن الخاص بك لعرض طرق الشحن المتاحة.",
+        "title": "الشحن غير متوفر",
+        "invalid_selected_address": "العنوان المختار للشحن غير صالح",
+        "invalid_selected_address_with_update_link": "العنوان المختار للشحن غير صالح. %{update_address_link} أو اختر عنوانًا مختلفًا",
+        "unavailable_addresses_only_countries": "يمكن شحن طلبك فقط إلى {{countriesList}}. أضف عنوانًا جديدًا للمتابعة.",
+        "unavailable_address_country": "الشحن غير متوفر في البلد الذي اخترته. استخدم عنوانًا مختلفًا للمتابعة",
+        "unavailable_selected_address": "الشحن غير متوفر للعنوان المحدد",
+        "unavailable_selected_address_for_region": "الشحن غير متوفر لـ {{region}}. اختر عنوانًا مختلفًا للمتابعة"
+      },
+      "shop_policies": {
+        "policy_label": "السياسة",
+        "policies_label": "السياسات",
+        "select_policy_label": "اختر سياسة",
+        "refund_policy": "سياسة الاسترجاع",
+        "privacy_policy": "سياسة الخصوصية",
+        "terms_of_service": "شروط الخدمة",
+        "legal_notice": "إشعار قانوني",
+        "shipping_policy": "الشحن",
+        "terms_of_sale": "شروط البيع",
+        "subscription_policy": "الإلغاءات",
+        "purchase_options_policy": "سياسة خيارات الشراء",
+        "contact_information": "اتصل بنا",
+        "purchase_options_cancellation_policy": "الإلغاءات",
+        "cookie_preferences": "ملفات تعريف الارتباط",
+        "terms_and_policies": "الشروط والسياسات"
+      },
+      "split_delivery": {
+        "cross_border": {
+          "modal": {
+            "content": "يجب أن تكون مواقع الاستلام والشحن في نفس البلد. تغيير البلد سيؤدي إلى إعادة تعيين جميع العناصر إلى الشحن.",
+            "change_country": "تغيير البلد"
+          },
+          "banner": "تم تحديث طريقة التوصيل الخاصة بك"
+        }
+      },
+      "shop_pay_external": {
+        "title": "الدفع عبر Shop Pay",
+        "errors": {
+          "problem_loading": "هناك مشكلة في تحميل Shop Pay",
+          "try_again_later": "تحقق من اتصالك أو أغلق هذه النافذة وحاول مرة أخرى بعد قليل.",
+          "checkout_has_expired": "انتهت صلاحية عملية الدفع الخاصة بك. أغلق هذه النافذة وحاول إتمام الدفع مرة أخرى من {{shopName}}."
+        },
+        "return_to_store": "العودة إلى {{shopName}}",
+        "return_to_store_simple": "العودة إلى المتجر"
       }
     },
     "attributes": {
