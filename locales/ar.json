@@ -844,7 +844,69 @@
         "apply_discount_button_label": "تطبيق",
         "applied_discount_message": "خصم %{amount} على إجمالي سعر الطلب",
         "amount_off_shipping": "خصم %{amount} على الشحن",
-        "alternative_payment_currency_total": "تم تحصيل %{amount_due}"
+        "alternative_payment_currency_total": "تم تحصيل %{amount_due}",
+        "discount_order_stacking": {
+          "one": "خصم الطلب",
+          "other": "خصومات الطلبات"
+        },
+        "discount_label": "رمز الخصم",
+        "discount_not_found": "غير قادر على العثور على خصم صالح يطابق الرمز المدخل",
+        "discount_placeholder": "رمز الخصم",
+        "discount_code_applied": "تم تطبيق رمز الخصم",
+        "discount_code_applied_with_code": "تم تطبيق رمز الخصم %{code}",
+        "discount_code_removed": "تم إزالة رمز الخصم %{code}",
+        "discount_code_replaced": "تم إزالة رمز الخصم %{old_code} وتم تطبيق %{code}",
+        "discount_code_replaced_multiple": "تم إزالة عدة رموز خصم وتم تطبيق %{code}",
+        "discount_code_allocations_mismatch": "رمز الخصم الخاص بك <strong style=\"text-transform:uppercase\">%{code}</strong> قد تغير. راجع سلة التسوق الخاصة بك وحاول مرة أخرى.",
+        "discount_has_been_applied": "تم تطبيق الخصم",
+        "discount_has_been_removed": "تم إزالة الخصم",
+        "automatic_discount_tooltip": "لا يمكن إزالة الخصومات المطبقة تلقائيًا",
+        "discount_already_applied": "تم تطبيق خصم على هذا الطلب. لا يمكنك إضافة خصم آخر.",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم غير صالح للعناصر الموجودة في سلة التسوق الخاصة بك",
+        "discount_requires_customer_notice": "أدخل معلومات الشحن الخاصة بك لتطبيق رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong>",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم غير متاح لك في الوقت الحالي",
+        "customer_already_used_once_per_customer_discount_notice": "تم استخدام رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> بالفعل",
+        "calculating_shipping": "جارٍ الحساب…",
+        "calculating": "جارٍ الحساب…",
+        "discount_code_aria_text": "رمز الخصم",
+        "deposit_label": "إيداع",
+        "discount_and_gift_card_savings_notice": "بعد %{discount_amount} من الخصومات و %{gift_card_amount} في بطاقات الهدايا",
+        "cost_table_title": "ملخص التكلفة",
+        "cost_table_item_column_header": "عنصر",
+        "cost_table_value_column_header": "القيمة",
+        "description_label": "الوصف",
+        "collapse_order_summary_short": "إخفاء",
+        "compare_at_sale": "تخفيض (%{sale_amount})",
+        "confirmation_number_label": "تأكيد #%{confirmation_number}",
+        "deferred_payment_info": {
+          "title": "يستحق دفع مبلغ %{amount_due} في %{due_at}",
+          "description_html": "لأي استفسارات حول طلبك، %{contact_us}.",
+          "paid_today": "المجموع المدفوع اليوم",
+          "paid_today_next": "تم الدفع اليوم",
+          "due_on_fulfillment_title": "يستحق دفع %{amount_due} عند التنفيذ",
+          "due_on_receipt_title": "يجب دفع مبلغ %{amount_due} عند الاستلام"
+        },
+        "deferred_balance_info": {
+          "title": "الرصيد المستحق {{amount_due}} يجب دفعه في {{due_at}}",
+          "due_on_fulfillment_title": "الرصيد المستحق {{amount_due}} يجب دفعه عند التنفيذ"
+        },
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> لا يعمل حالياً. اتصل بنا للمساعدة.",
+        "deferred_total_due_date_label": "المبلغ الإجمالي المستحق {{date}}",
+        "deferred_total_due_date_label_next": "المستحق في %{date}",
+        "custom_discount": "خصم مخصص",
+        "collapse_component_information": {
+          "one": "إخفاء %{count} عنصر",
+          "other": "إخفاء %{count} عناصر"
+        },
+        "discount_discovery": {
+          "add_code": "أضف خصم",
+          "back_to_finalize_order": "العودة لإنهاء الطلب",
+          "merchandise_quantity_label": {
+            "one": "%{count} عنصر",
+            "other": "%{count} عناصر"
+          }
+        },
+        "discount_applies_to_subscription_items_only": "ينطبق هذا الخصم فقط على عناصر الاشتراك"
       },
       "notifications": {
         "title": "الإشعارات"
