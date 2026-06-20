@@ -2623,7 +2623,73 @@
       "credit_card_session_expired": "انتهت صلاحية تفويض بطاقة الائتمان، يرجى إدخال معلومات الدفع الخاصة بك مرة أخرى. لم يتم خصم أي مبلغ من بطاقتك.",
       "bad_domain": "يحتوي على اسم نطاق غير صالح",
       "contains_html_tags": "لا يمكن أن يحتوي على علامات HTML",
-      "contains_spaces": "يبدأ أو ينتهي بمسافات."
+      "contains_spaces": "يبدأ أو ينتهي بمسافات.",
+      "empty": "لا يمكن أن يكون فارغًا",
+      "invalid_email": "يجب أن يكون عنوان بريد إلكتروني صالحًا",
+      "discount_disabled": "تم تعطيل هذا الخصم",
+      "discount_expired": "هذا الخصم لم يعد صالحًا بعد الآن",
+      "discount_limit_reached": "وصل هذا الخصم إلى حد استخدامه",
+      "discount_not_found": "غير قادر على العثور على خصم صالح يطابق الرمز المدخل",
+      "customer_already_used_once_per_customer_discount_notice": "وصل هذا الخصم إلى حد استخدامه",
+      "gift_card_already_applied": "تم تطبيق الرمز بالفعل على عملية الدفع الخاصة بك",
+      "gift_card_code_invalid": "الرمز غير صالح",
+      "gift_card_currency_mismatch": "لا يمكن استخدام بطاقة الهدايا هذه لهذه العملية الشرائية. اتصل بـ %{shop_name} لإعادة إصدارها.",
+      "gift_card_depleted": "لا توجد أموال متبقية على بطاقة الهدية هذه",
+      "gift_card_disabled": "بطاقة الهدايا معطلة",
+      "gift_card_expired": "بطاقة الهدايا منتهية الصلاحية",
+      "invalid": "غير صالح",
+      "password_mismatch": "يجب أن يتطابق مع كلمة المرور المقدمة",
+      "invalid_for_country": "غير صالح لـ %{country}",
+      "invalid_for_country_and_province": "غير صالح لـ %{province} و %{country}",
+      "invalid_province_in_country": "ليست محافظة صالحة في %{country}",
+      "invalid_state_in_country": "ليست حالة صالحة في %{country}",
+      "invalid_region_in_country": "ليست منطقة صالحة في %{country}",
+      "less_than_or_equal_to": "يجب أن يكون أقل من أو يساوي %{count}",
+      "not_supported": "غير مدعوم",
+      "full_name_required": "أدخل الاسم الأول واسم العائلة",
+      "invalid_for_card_type": "غير صالح",
+      "invalid_type": "عذرًا، لا نقبل بطاقات من هذا النوع",
+      "invalid_format": "التنسيق غير صالح",
+      "expired": "انتهت صلاحيته",
+      "invalid_start_date_or_issue_number_for_debit": "مطلوب تاريخ بدء صالح أو رقم إصدار",
+      "invalid_expiry_year": "ليس سنة انتهاء صلاحية صالحة",
+      "reset_password_html": "عنوان البريد الإلكتروني هذا مرتبط بالفعل بحساب. إذا كان هذا الحساب يخصك، يمكنك <a href=\"/account/login#recover\">إعادة تعيين كلمة المرور الخاصة بك</a>",
+      "product_not_available": "المنتج غير منشور لهذا العميل.",
+      "shop_404": {
+        "heros": {
+          "store_will_be_right_back": "سيعود هذا المتجر قريبًا",
+          "store_unavailable": "هذه المتجر غير متوفر حالياً.",
+          "store_not_exist": "هذا المتجر غير موجود.",
+          "no_storefront": "هذا المتجر لا يملك موقعًا إلكترونيًا بعد."
+        },
+        "links": {
+          "refresh_page": "تحديث الصفحة",
+          "explore_other_stores": "استكشف متاجر أخرى",
+          "start_free_trial": "ابدأ تجربة مجانية"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "البيع شخصيًا",
+            "caption": "احصل على الميزات التي تحتاجها لإدارة متجرك بالتجزئة سواء كنت تبدأ أو توسع عملك.",
+            "link_text": "ابدأ التجربة المجانية"
+          },
+          "open_a_store": {
+            "header": "افتح متجر شوبيفاي جديد",
+            "caption": "ابدأ تجربة مجانية لمدة 3 أيام، ثم استمر مقابل 1 دولار شهريًا للأشهر الثلاثة القادمة.",
+            "link_text": "سجل الآن"
+          },
+          "editions": {
+            "header": "اطلع على إصدارات Shopify",
+            "caption": "مع أكثر من 100 تحديث للمنتجات، يمكنك أن تكون أكثر إنتاجية وإبداعًا وقوة في التجارة أكثر مما كنت تتخيل.",
+            "link_text": "استكشف الإصدارات الأخيرة"
+          },
+          "store_owner": {
+            "header": "هل أنت صاحب المتجر؟",
+            "caption": "هل تواجه مشكلة في الدخول إلى متجرك؟ جرب ميزة %{forgot_your_store_link}. إذا كنت ترغب في إعادة تفعيل متجرك، اتصل بـ %{shopify_support_link}.",
+            "shopify_support_link_text": "دعم شوبيفاي"
+          }
+        }
+      }
     },
     "email_marketing": {
       "subscribed": {
